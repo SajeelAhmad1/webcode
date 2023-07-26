@@ -1,0 +1,33 @@
+.services{
+    margin-top: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    border: 1px ;
+}
+.abs{
+    text-align: center;
+    font-size: 30px;
+    background-color: #CBB279;
+    color: #27374D;
+    border-radius: 10px;
+}
+.text{
+    margin-top: 17%;
+}
+.heading{
+    font-size: 30px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.tag-lines{
+    margin-top: 5%;
+  }
+  
+  .ques{
+    color: rgb(99 102 241);
+    font-size: 28px;
+  }
+  .tag-line{
+    font-size: 25px;
+  }

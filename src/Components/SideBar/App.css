@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+}
+
+main {
+  width: 65%;
+  padding: 10px;
+}
+.sidebar {
+  background-color: #F5F5F5;
+  color: #000000;
+  position: fixed;
+  top: 10%;
+  width: 25%;
+  height: 90vh;
+  overflow-y: auto;
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.link {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.link:hover {
+  background: #9DB2BF;
+  color: #000;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.active {
+  background: #9DB2BF;
+  color: #000;
+}
+
+.link_text {
+  font-size: 15px;
+}
+.sideBarBody{
+    width: 85%;
+    margin-left: 15%;
+}

@@ -1,0 +1,59 @@
+.margin{
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.vs-link, .ascii-link{
+    color: blue;
+}
+.btn{
+    margin-left: 5%;
+}
+
+.button{
+  /* width: 12%; */
+}
+
+/* Styles for the parent container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Styles for the components */
+  .ch-content {
+    flex: 1;
+    min-width: 108%; /* Set a minimum width for the components */
+    margin: 10px;
+    margin-left: 27%;
+    margin-top: 10%;
+  }
+
+
+
+  /* Styles for the parent container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+  }
+
+  
+  /* Styles for the component for larger screens */
+.ch-content {
+    width: 100%; /* Default width */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .ch-content {
+      width: 50%; /* Custom width for smaller screens */
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media (max-width: 480px) {
+    .ch-content {
+      width: 100%; /* Custom width for even smaller screens */
+    }
+  }
+  
