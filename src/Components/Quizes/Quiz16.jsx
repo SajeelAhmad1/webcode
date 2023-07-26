@@ -21,22 +21,41 @@ const Quiz16 = () => {
   const questions = [
     {
       id: 1,
-      question:
-        "Compiler translates the instructions written in High Level Language to:",
+      question: 'Array is used to:',
       options: [
-        "High Level Language",
-        "Middle Level Language",
-        "Machine Understandable language",
-        "English Language",
+        "store multiple data values in multiple variables", "store multiple data values in single variable", "store single data value in single variable" , "store single data value in single variable"
       ],
-      correctAnswer: "Machine Understandable language",
+      correctAnswer: "store multiple data values in single variable",
     },
     {
       id: 2,
-      question: "An Integrated Development Environment (IDE) will works as:",
-      options: ["Text editor", "Compiler", "Both", "None"],
-      correctAnswer: "Both",
+      question: 'I want to access the first element of array. For this purpose, I will use:',
+      options: [
+        "array[0]", "array[1]", "int array[0]", "int array[1]" 
+      ],
+      correctAnswer: "array[0]",
     },
+    {
+      id: 3,
+      question: 'Is it necessary to give the size of array:',
+      options: ["Yes", "No"],
+      correctAnswer: "No",
+    },
+    {
+      id: 4,
+      question: 'You can find the size of array using:',
+      options: ["array.length()", "array.size()", "sizeof(array)/sizeof(datatype)", "All are correct"],
+      correctAnswer: "sizeof(array)/sizeof(datatype)",
+    },
+    {
+      id: 5,
+      question: 'Array of characters is also called:',
+      options: ["array of text", "sentence", "string", "All are correct"],
+      correctAnswer: "string",
+    },
+    
+    
+    
   ];
   const handleAnswerChange = (questionId, selectedAnswer) => {
     setAnswers((prevAnswers) => ({
@@ -68,7 +87,7 @@ const Quiz16 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz15">
                 <button
                   class="ui primary button"
                   style={{
@@ -80,7 +99,7 @@ const Quiz16 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz17">
                 <button
                   class="ui primary button"
                   style={{
@@ -95,20 +114,23 @@ const Quiz16 = () => {
               </Link>
               <br />
               <div class="start content">
-                An Overview of Computers and Programming Languages
+                Arrays
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Introduction to C++
+                Quiz # 16
               </h2>
+              <span class="tut-btn"><Link to="/tutorials/Chapter15">
+                  <button class="ui secondary button">Read Tutorial</button>
+                </Link></span>
               <div class="ui clearing divider"></div>
               <div>
-                {questions.map((question) => (
+                {questions.map((question,i) => (
                   <div key={question.id}>
                     <div class="con">
-                      <div class="que">{question.question}</div>
+                    <div class="que">Q{i+1}:<span class="one-per-left-margin">{question.question}</span></div>
                       {question.options.map((option) => (
                         <label class="label" key={option}>
                           <input
@@ -120,7 +142,7 @@ const Quiz16 = () => {
                               handleAnswerChange(question.id, e.target.value)
                             }
                           />
-                          {option}
+                          <span className="one-per-left-margin">{option}</span>
                           <br />
                         </label>
                       ))}
@@ -150,31 +172,31 @@ const Quiz16 = () => {
 
               <br />
             </div>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                }}
-              >
-                Previous
-              </button>
-            </Link>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                  float: "right",
-                }}
-              >
-                <span> Next</span>
-              </button>
-            </Link>
+            <Link to="/quizes/quiz15">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                  }}
+                >
+                  Previous
+                </button>
+              </Link>
+              <Link to="/quizes/quiz17">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
             <br />
           </div>
         </div>

@@ -178,14 +178,16 @@ int main(){
               <br />
               <b>Congratulations you have build your first mini project.</b>
               <br />
-              <hr />
-              <br />
-              <br />
+              <div className="quiz">
+                <Link to="/quizes/quiz7">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Practice Questions:
               </h2>
               <br />
-              <br />
+              
               <br />
               <Q7 />
             </div>

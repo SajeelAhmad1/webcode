@@ -21,22 +21,53 @@ const Quiz19 = () => {
   const questions = [
     {
       id: 1,
-      question:
-        "Compiler translates the instructions written in High Level Language to:",
+      question: 'Declaration of function is also called:',
       options: [
-        "High Level Language",
-        "Middle Level Language",
-        "Machine Understandable language",
-        "English Language",
+        "definition", "initialization", "prototype of function" , "Both B and C"
       ],
-      correctAnswer: "Machine Understandable language",
+      correctAnswer: "prototype of function",
     },
     {
       id: 2,
-      question: "An Integrated Development Environment (IDE) will works as:",
-      options: ["Text editor", "Compiler", "Both", "None"],
-      correctAnswer: "Both",
+      question: 'Anything we write inside the function block is called:',
+      options: [
+        "definition", "initialization", "prototype of function" , "Both B and C" 
+      ],
+      correctAnswer: "definition",
     },
+    {
+      id: 3,
+      question: 'Identify the correct syntax for writing the function:',
+      options: ["return_type func_name( parameters ){...}", "return_type func_name( parameters );{...}", "return_type func_name( parameters ){...};"],
+      correctAnswer: "return_type func_name( parameters ){...}",
+    },
+    {
+      id: 4,
+      question: 'void function returns:',
+      options: ["nothing", "can return any value", "int", "none"],
+      correctAnswer: "nothing",
+    },
+    {
+      id: 5,
+      question: 'Parameters and arguments are the same terms:',
+      options: ["Yes", "No"],
+      correctAnswer: "No",
+    },
+    {
+      id: 6,
+      question: 'Calling a function within the same function is called:',
+      options: ["recursion", "function calling", "looping within the function", "none"],
+      correctAnswer: "recursion",
+    },
+    {
+      id: 7,
+      question: 'Overloaded functions have:',
+      options: ["same name", "same name but number or datatypes of parameters must be different", "sequence of parameters can be different", "Both Band C"],
+      correctAnswer: "Both Band C",
+    },
+    
+    
+    
   ];
   const handleAnswerChange = (questionId, selectedAnswer) => {
     setAnswers((prevAnswers) => ({
@@ -68,7 +99,7 @@ const Quiz19 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz18">
                 <button
                   class="ui primary button"
                   style={{
@@ -80,7 +111,7 @@ const Quiz19 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz20">
                 <button
                   class="ui primary button"
                   style={{
@@ -95,20 +126,23 @@ const Quiz19 = () => {
               </Link>
               <br />
               <div class="start content">
-                An Overview of Computers and Programming Languages
+                Functions
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Introduction to C++
+                Quiz # 19
               </h2>
+              <span class="tut-btn"><Link to="/tutorials/Chapter18">
+                  <button class="ui secondary button">Read Tutorial</button>
+                </Link></span>
               <div class="ui clearing divider"></div>
               <div>
-                {questions.map((question) => (
+                {questions.map((question,i) => (
                   <div key={question.id}>
                     <div class="con">
-                      <div class="que">{question.question}</div>
+                    <div class="que">Q{i+1}:<span class="one-per-left-margin">{question.question}</span></div>
                       {question.options.map((option) => (
                         <label class="label" key={option}>
                           <input
@@ -120,7 +154,7 @@ const Quiz19 = () => {
                               handleAnswerChange(question.id, e.target.value)
                             }
                           />
-                          {option}
+                          <span className="one-per-left-margin">{option}</span>
                           <br />
                         </label>
                       ))}
@@ -150,31 +184,31 @@ const Quiz19 = () => {
 
               <br />
             </div>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                }}
-              >
-                Previous
-              </button>
-            </Link>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                  float: "right",
-                }}
-              >
-                <span> Next</span>
-              </button>
-            </Link>
+            <Link to="/quizes/quiz18">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                  }}
+                >
+                  Previous
+                </button>
+              </Link>
+              <Link to="/quizes/quiz20">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
             <br />
           </div>
         </div>

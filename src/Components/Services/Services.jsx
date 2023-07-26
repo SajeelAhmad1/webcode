@@ -99,7 +99,7 @@ const Services = () => {
             </div></div>
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><b>C++ at Glance</b></h2>
-              <p class="leading-relaxed">In this section, you can go through all the topics of C++.</p>
+              <p class="leading-relaxed">In this section, you can go through all the topics of C++. These are short notes for quick revision</p>
                 <button onclick="window.location.href='quicksort.html';" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
                   <Link to="/cppatglance">Explore</Link>
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">

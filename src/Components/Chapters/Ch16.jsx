@@ -291,8 +291,15 @@ char grade;//1byte
                 2. We can also use functions as member of structures or unions,
                 which we will discuss later.
               </p>
-            </div>
+            
+            <div className="quiz">
+                <Link to="/quizes/quiz17">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
+              </div>
             <Link to="/tutorials/Chapter15">
+              
             <button
                 class="ui primary button"
                 style={{ flex: 1, minWidth: "100px", height: "40px" }}

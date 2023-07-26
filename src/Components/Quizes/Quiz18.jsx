@@ -21,22 +21,41 @@ const Quiz18 = () => {
   const questions = [
     {
       id: 1,
-      question:
-        "Compiler translates the instructions written in High Level Language to:",
+      question: 'Pointers store:',
       options: [
-        "High Level Language",
-        "Middle Level Language",
-        "Machine Understandable language",
-        "English Language",
+        "decimals", "address", "hexa-decimal values" , "Both B and C"
       ],
-      correctAnswer: "Machine Understandable language",
+      correctAnswer: "Both B and C",
     },
     {
       id: 2,
-      question: "An Integrated Development Environment (IDE) will works as:",
-      options: ["Text editor", "Compiler", "Both", "None"],
-      correctAnswer: "Both",
+      question: 'Identify the correct syntax for declaring and initializing pointer:',
+      options: [
+        "datatype *name = &var", "datatype name = &var", "datatype *name = var", "can use any of them" 
+      ],
+      correctAnswer: "datatype *name = &var",
     },
+    {
+      id: 3,
+      question: 'Identify address of and dereference operator:',
+      options: ['& , *', '* , &', '& , &', '* , *'],
+      correctAnswer: "& , *",
+    },
+    {
+      id: 4,
+      question: '*(ptr) will:',
+      options: ["give the address of ptr", "give the value stored in ptr", "give the value stored at the address stored in ptr", "none"],
+      correctAnswer: "give the value stored at the address stored in ptr",
+    },
+    {
+      id: 5,
+      question: '**ptr is:',
+      options: ["pointer", "array", "pointer to array", "pointer to pointer"],
+      correctAnswer: "pointer to pointer",
+    },
+    
+    
+    
   ];
   const handleAnswerChange = (questionId, selectedAnswer) => {
     setAnswers((prevAnswers) => ({
@@ -68,7 +87,7 @@ const Quiz18 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz17">
                 <button
                   class="ui primary button"
                   style={{
@@ -80,7 +99,7 @@ const Quiz18 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz19">
                 <button
                   class="ui primary button"
                   style={{
@@ -95,20 +114,23 @@ const Quiz18 = () => {
               </Link>
               <br />
               <div class="start content">
-                An Overview of Computers and Programming Languages
+                Pointers
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Introduction to C++
+                Quiz # 18
               </h2>
+              <span class="tut-btn"><Link to="/tutorials/Chapter17">
+                  <button class="ui secondary button">Read Tutorial</button>
+                </Link></span>
               <div class="ui clearing divider"></div>
               <div>
-                {questions.map((question) => (
+                {questions.map((question,i) => (
                   <div key={question.id}>
                     <div class="con">
-                      <div class="que">{question.question}</div>
+                    <div class="que">Q{i+1}:<span class="one-per-left-margin">{question.question}</span></div>
                       {question.options.map((option) => (
                         <label class="label" key={option}>
                           <input
@@ -120,7 +142,7 @@ const Quiz18 = () => {
                               handleAnswerChange(question.id, e.target.value)
                             }
                           />
-                          {option}
+                          <span className="one-per-left-margin">{option}</span>
                           <br />
                         </label>
                       ))}
@@ -150,31 +172,31 @@ const Quiz18 = () => {
 
               <br />
             </div>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                }}
-              >
-                Previous
-              </button>
-            </Link>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                  float: "right",
-                }}
-              >
-                <span> Next</span>
-              </button>
-            </Link>
+            <Link to="/quizes/quiz17">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                  }}
+                >
+                  Previous
+                </button>
+              </Link>
+              <Link to="/quizes/quiz19">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
             <br />
           </div>
         </div>

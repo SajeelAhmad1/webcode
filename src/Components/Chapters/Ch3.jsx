@@ -178,6 +178,11 @@ int main(){
                   </ul>
                 </div>
               </p>
+              <div className="quiz">
+                <Link to="/quizes/quiz3">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
             </div>
             <Link to="/tutorials/Chapter2">
             <button

@@ -21,22 +21,40 @@ const Quiz14 = () => {
   const questions = [
     {
       id: 1,
-      question:
-        "Compiler translates the instructions written in High Level Language to:",
+      question: 'Correct syntax for while loop is:',
       options: [
-        "High Level Language",
-        "Middle Level Language",
-        "Machine Understandable language",
-        "English Language",
+        "while (condition){...}", "while (condition){...};", "while (i=0){...}", "while (condition){do{...}}" 
       ],
-      correctAnswer: "Machine Understandable language",
+      correctAnswer: "while (condition){...}",
     },
     {
       id: 2,
-      question: "An Integrated Development Environment (IDE) will works as:",
-      options: ["Text editor", "Compiler", "Both", "None"],
-      correctAnswer: "Both",
+      question: 'We can use while loop as a substitue for for-loop:',
+      options: [
+        "Yes", "No" 
+      ],
+      correctAnswer: "Yes",
     },
+    {
+      id: 3,
+      question: 'The loop in which first iteration is done without checking the condition is:',
+      options: ["while loop", "for loop", "do-while loop", "none"],
+      correctAnswer: "do-while loop",
+    },
+    {
+      id: 4,
+      question: 'Correct syntax for do-while loop is:',
+      options: ["do{...} while(condition)", "do{...} while(condition);", "do{...} while(initialization)", "All are correct"],
+      correctAnswer: "do{...} while(condition);",
+    },
+    {
+      id: 5,
+      question: 'If we do not update our variable:',
+      options: ["there will be an infinite loop", "run time error", "loop will terminate after one iteration", "execution error"],
+      correctAnswer: "there will be an infinite loop",
+    },
+    
+    
   ];
   const handleAnswerChange = (questionId, selectedAnswer) => {
     setAnswers((prevAnswers) => ({
@@ -68,7 +86,7 @@ const Quiz14 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz13">
                 <button
                   class="ui primary button"
                   style={{
@@ -80,7 +98,7 @@ const Quiz14 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz15">
                 <button
                   class="ui primary button"
                   style={{
@@ -95,20 +113,23 @@ const Quiz14 = () => {
               </Link>
               <br />
               <div class="start content">
-                An Overview of Computers and Programming Languages
+                While and do-while Loop
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Introduction to C++
+                Quiz # 14
               </h2>
+              <span class="tut-btn"><Link to="/tutorials/Chapter14">
+                  <button class="ui secondary button">Read Tutorial</button>
+                </Link></span>
               <div class="ui clearing divider"></div>
               <div>
-                {questions.map((question) => (
+                {questions.map((question,i) => (
                   <div key={question.id}>
                     <div class="con">
-                      <div class="que">{question.question}</div>
+                    <div class="que">Q{i+1}:<span class="one-per-left-margin">{question.question}</span></div>
                       {question.options.map((option) => (
                         <label class="label" key={option}>
                           <input
@@ -120,7 +141,7 @@ const Quiz14 = () => {
                               handleAnswerChange(question.id, e.target.value)
                             }
                           />
-                          {option}
+                          <span className="one-per-left-margin">{option}</span>
                           <br />
                         </label>
                       ))}
@@ -150,31 +171,31 @@ const Quiz14 = () => {
 
               <br />
             </div>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                }}
-              >
-                Previous
-              </button>
-            </Link>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                  float: "right",
-                }}
-              >
-                <span> Next</span>
-              </button>
-            </Link>
+            <Link to="/quizes/quiz13">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                  }}
+                >
+                  Previous
+                </button>
+              </Link>
+              <Link to="/quizes/quiz15">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
             <br />
           </div>
         </div>

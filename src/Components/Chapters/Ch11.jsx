@@ -32,7 +32,8 @@ const Ch11 = () => {
     borderRadius: "3px",
     marginLeft: "0%",
   };
-  const code1 = `If ( condition ){
+  const codeif = `if(condition){...}`
+  const code1 = `if ( condition ){
     //code
 }
 else{
@@ -101,8 +102,8 @@ int main(){
     }
     return 0;
 }`;
-  const code6 = `If(condition){...}
-If(condition){...}
+  const code6 = `if(condition){...}
+if(condition){...}
 Else{...}`;
   const code7 = `datatype var_name = Condition ? if true then this will be execute : else this will be executed`;
   const code8 = `#include<iostream>
@@ -153,6 +154,16 @@ int main(){
                 action.
               </p>
               <br />
+              We use <b>if</b>, <b>if-else</b>, <b>else-if</b> as conditional statements. <br /><br />
+              <b>If statement:</b><br />
+              If statement checks the condition and execute the specific code. <br />
+              <b>Syntax</b>
+              <div style={containerStyle}>
+                <SyntaxHighlighter language="cpp" style={darcula}>
+                  {codeif}
+                </SyntaxHighlighter>
+              </div><br /><br />
+              <b>If-else:</b><br />
               If-else is used as conditional statement. In if else statements,
               if one condition is true, it will be executed and all others will
               be ignored. <br />
@@ -321,15 +332,16 @@ int main(){
                 <b>Note: </b>You can use ternary operator when logic is simple.
                 It makes your code more compact and easy to use. <br />
               </p>
-              <br />
-              <hr />
-              <br />
-              <br />
+              <div className="quiz">
+                <Link to="/quizes/quiz11">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Practice Questions:
               </h2>
               <br />
-              <br />
+              
               <br />
               <Q11 />
             </div>

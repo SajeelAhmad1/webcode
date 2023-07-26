@@ -72,27 +72,27 @@ const Sidebar = ({children}) => {
             name:"While and do-while Loop",
         },
         {
-            path:"/tutorials/Chapter15",
+            path:"/tutorials/Chapter14b",
             name:"Continue and Break Statements",
         },
         {
-            path:"/tutorials/Chapter16",
+            path:"/tutorials/Chapter15",
             name:"Arrays",
         },
         {
-            path:"/tutorials/Chapter17",
+            path:"/tutorials/Chapter16",
             name:"Structures and Unions",
         },
         {
-            path:"/tutorials/Chapter18",
+            path:"/tutorials/Chapter17",
             name:"Pointers",
         },
         {
-            path:"/tutorials/Chapter19",
+            path:"/tutorials/Chapter18",
             name:"Functions",
         },
         {
-            path:"/tutorials/Chapter20",
+            path:"/tutorials/Chapter18b",
             name:"Built-in Functions",
         },
         

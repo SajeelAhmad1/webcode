@@ -136,15 +136,17 @@ int main() {
                 </div>
               </div>
               <br />
-              <br />
-
-              <br />
+              
               <p>
                 Your code should be error free so that it will execute without
                 any error. <br />
                 We will understand this code in the next chapter.
               </p>
-              <br />
+              <div className="quiz">
+                <Link to="/quizes/quiz2">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               <hr />
               <br />
               <br />

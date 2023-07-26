@@ -115,7 +115,7 @@ const Quiz9 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz8">
                 <button
                   class="ui primary button"
                   style={{
@@ -127,7 +127,7 @@ const Quiz9 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz10">
                 <button
                   class="ui primary button"
                   style={{
@@ -142,14 +142,17 @@ const Quiz9 = () => {
               </Link>
               <br />
               <div class="start content">
-                An Overview of Computers and Programming Languages
+                Operators
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Introduction to C++
+                Quiz # 9
               </h2>
+              <span class="tut-btn"><Link to="/tutorials/Chapter9">
+                  <button class="ui secondary button">Read Tutorial</button>
+                </Link></span>
               <div class="ui clearing divider"></div>
               <div>
                 {questions.map((question,i) => (
@@ -197,31 +200,31 @@ const Quiz9 = () => {
 
               <br />
             </div>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                }}
-              >
-                Previous
-              </button>
-            </Link>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                  float: "right",
-                }}
-              >
-                <span> Next</span>
-              </button>
-            </Link>
+            <Link to="/quizes/quiz8">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                  }}
+                >
+                  Previous
+                </button>
+              </Link>
+              <Link to="/quizes/quiz10">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
             <br />
           </div>
         </div>

@@ -201,15 +201,15 @@ int main(){
                   </SyntaxHighlighter>
                 </div>
               </div>
-              <br />
-              <br />
-              <hr />
-              <br />
-              <br />
+              <div className="quiz">
+                <Link to="/quizes/quiz14">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Practice Questions:
               </h2>
-              <br />
+              
               <br />
               <br />
               <Q14 />

@@ -649,26 +649,29 @@ int main(){
               within innermost parenthesis is evaluated first.
             </li>
           </ul>
+          You can check out precedence of operators at: <br /><br />
+          <div className="btn">
+          <center><button class="huge ui primary button">
+          <a href="https://en.cppreference.com/w/cpp/language/operator_precedence">Operator Precedence</a>
+          </button></center>
+          </div>
           <br /><br />
           <b>Example:</b><br /><br />
           (4-(3*5))+2 <br />
           <b>1.</b> (3*5) is computed and returns value of 15. <br />
           <b>2.</b> 4-15 is computed and then return a value of -11. <br />
-          <b>3.</b> -11+2 is computed and returns value of -9. <br /><br />
-          You can check out precedence of operators at: <br />
-          <div className="btn">
-          <button class="huge ui primary button">
-          <a href="https://en.cppreference.com/w/cpp/language/operator_precedence">Operator Precedence</a>
-          </button>
-          </div>
-          <br />
-          <hr />
-          <br />
-          <br />
+          <b>3.</b> -11+2 is computed and returns value of -9. 
+          
+          
+          <div className="quiz">
+                <Link to="/quizes/quiz9">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
           <h2 class="ui left floated header" style={{ color: "#001C30" }}>
             Practice Questions:
           </h2>
-          <br />
+          
           <br />
           <br />
           <Q9 />

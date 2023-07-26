@@ -8,17 +8,34 @@ const Ch1 = () => {
   return (
     <>
       <Sidebar>
-        
-        <div class="container">
+        <div class="containera">
           <div className="ch-content">
             <h2 class="ui header">
-            <button class='ui primary button' style={{ flex: 1, minWidth: '100px', height: '40px' }}>Previous</button>
-            <Link to="/tutorials/Chapter2"><button class='ui primary button' style={{ flex: 1, minWidth: '100px', height: '40px', float:'right' }}><span>  Next</span></button></Link><br />
+              <button
+                class="ui primary button"
+                style={{ flex: 1, minWidth: "100px", height: "40px" }}
+              >
+                Previous
+              </button>
+              <Link to="/tutorials/Chapter2">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
+              <br />
               <div class="start content">
                 An Overview of Computers and Programming Languages
               </div>
             </h2>
-            
+
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Introduction to C++
@@ -223,12 +240,23 @@ const Ch1 = () => {
                 <br />
                 It is not necessary to have any prior programming experience.
               </p>
-            </div><button class="ui primary button">Previous</button>
-            <Link to="/tutorials/Chapter2"><button class="ui primary button" style={{float:'right'}}>Next</button></Link><br />
+              <div className="quiz">
+                <Link to="/quizes/quiz1">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
+            </div>
+            <button class="ui primary button">Previous</button>
+            <Link to="/tutorials/Chapter2">
+              <button class="ui primary button" style={{ float: "right" }}>
+                Next
+              </button>
+            </Link>
+            <br />
           </div>
         </div>
       </Sidebar>
-      
+
       <div class="sideBarBody">
         <Footer />
       </div>

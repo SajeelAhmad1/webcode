@@ -21,22 +21,64 @@ const Quiz17 = () => {
   const questions = [
     {
       id: 1,
-      question:
-        "Compiler translates the instructions written in High Level Language to:",
+      question: 'struct is a:',
       options: [
-        "High Level Language",
-        "Middle Level Language",
-        "Machine Understandable language",
-        "English Language",
+        "primitive data type", "user defined data type", "derived data type" , "none"
       ],
-      correctAnswer: "Machine Understandable language",
+      correctAnswer: "user defined data type",
     },
     {
       id: 2,
-      question: "An Integrated Development Environment (IDE) will works as:",
-      options: ["Text editor", "Compiler", "Both", "None"],
-      correctAnswer: "Both",
+      question: 'struct can store:',
+      options: [
+        "variables", "functions", "Both A and B", "user defined variables" 
+      ],
+      correctAnswer: "Both A and B",
     },
+    {
+      id: 3,
+      question: 'Where is struct declared:',
+      options: ["outside the main function", "inside the main function"],
+      correctAnswer: "outside the main function",
+    },
+    {
+      id: 4,
+      question: 'We can access members of array using:',
+      options: ["cout <<", "cin >>", "dot operator", "All are correct"],
+      correctAnswer: "dot operator",
+    },
+    {
+      id: 5,
+      question: 'Size of struct is the sum of sizes of its data members:',
+      options: ["Yes", "No"],
+      correctAnswer: "Yes",
+    },
+    {
+      id: 6,
+      question: 'Size of union is the sum of sizes of its data members:',
+      options: ["Yes", "No"],
+      correctAnswer: "No",
+    },
+    {
+      id: 7,
+      question: 'At a signle time, we can access how many members of union:',
+      options: ["1", "2", "3", "we can access all members at the same time"],
+      correctAnswer: "1",
+    },
+    {
+      id: 8,
+      question: 'Size of union is the size of its _____ data members:',
+      options: ["biggest", "smallest", "all data members", "none"],
+      correctAnswer: "biggest",
+    },
+    {
+      id: 9,
+      question: 'structs and unions store data with ____ data type.',
+      options: ["same", "different", "compatible", "none"],
+      correctAnswer: "different",
+    },
+    
+    
   ];
   const handleAnswerChange = (questionId, selectedAnswer) => {
     setAnswers((prevAnswers) => ({
@@ -68,7 +110,7 @@ const Quiz17 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz16">
                 <button
                   class="ui primary button"
                   style={{
@@ -80,7 +122,7 @@ const Quiz17 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz18">
                 <button
                   class="ui primary button"
                   style={{
@@ -95,20 +137,23 @@ const Quiz17 = () => {
               </Link>
               <br />
               <div class="start content">
-                An Overview of Computers and Programming Languages
+                Structures and Unions
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Introduction to C++
+                Quiz # 17
               </h2>
+              <span class="tut-btn"><Link to="/tutorials/Chapter16">
+                  <button class="ui secondary button">Read Tutorial</button>
+                </Link></span>
               <div class="ui clearing divider"></div>
               <div>
-                {questions.map((question) => (
+                {questions.map((question,i) => (
                   <div key={question.id}>
                     <div class="con">
-                      <div class="que">{question.question}</div>
+                    <div class="que">Q{i+1}:<span class="one-per-left-margin">{question.question}</span></div>
                       {question.options.map((option) => (
                         <label class="label" key={option}>
                           <input
@@ -120,7 +165,7 @@ const Quiz17 = () => {
                               handleAnswerChange(question.id, e.target.value)
                             }
                           />
-                          {option}
+                          <span className="one-per-left-margin">{option}</span>
                           <br />
                         </label>
                       ))}
@@ -150,31 +195,31 @@ const Quiz17 = () => {
 
               <br />
             </div>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                }}
-              >
-                Previous
-              </button>
-            </Link>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                  float: "right",
-                }}
-              >
-                <span> Next</span>
-              </button>
-            </Link>
+            <Link to="/quizes/quiz16">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                  }}
+                >
+                  Previous
+                </button>
+              </Link>
+              <Link to="/quizes/quiz18">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
             <br />
           </div>
         </div>

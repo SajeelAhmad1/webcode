@@ -225,16 +225,16 @@ for( initialization ; condition ; change-variable-value ){
   }
 }`
 const code17 = `//escape sequences
-\n //adds a new line
-\t //adds four spaces
-\b //backspace
-\a //beep sound
-\f //form feed
-\r //carriage return
-\\ //adds backslash
-\' adds single quote
-\? //adds question mark
-\0 //null character`
+\\n //adds a new line
+\\t //adds four spaces
+\\b //backspace
+\\a //beep sound
+\\f //form feed
+\\r //carriage return
+\\\ //adds backslash
+\\' adds single quote
+\\? //adds question mark
+\\0 //null character`
 
 const code18 = `// built-in functions in stdio.h
 var = getchar();

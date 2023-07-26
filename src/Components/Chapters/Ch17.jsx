@@ -231,14 +231,15 @@ int **ptr2 = &ptr1;
                   {code8}
                 </SyntaxHighlighter>
               </div>
-              <br />
-              <hr />
-              <br />
-              <br />
+              <div className="quiz">
+                <Link to="/quizes/quiz18">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Practice Questions:
               </h2>
-              <br />
+              
               <br />
               <br />
               <Q17 />

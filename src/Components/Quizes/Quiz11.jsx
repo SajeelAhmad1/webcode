@@ -21,22 +21,40 @@ const Quiz11 = () => {
   const questions = [
     {
       id: 1,
-      question:
-        "Compiler translates the instructions written in High Level Language to:",
+      question: 'Identify the correct syntax for if-else statement":',
       options: [
-        "High Level Language",
-        "Middle Level Language",
-        "Machine Understandable language",
-        "English Language",
+        "if (condition) {...}\nelse {...}",
+        'if {...}\nelse (condition) {...}',
+        '"if {...}\nelse {...}',
+        "if (condition) {...}\nelse (condition) {...}",
       ],
-      correctAnswer: "Machine Understandable language",
+      correctAnswer: "if (condition) {...}\nelse {...}",
     },
     {
       id: 2,
-      question: "An Integrated Development Environment (IDE) will works as:",
-      options: ["Text editor", "Compiler", "Both", "None"],
-      correctAnswer: "Both",
+      question: 'For simple if-else logic, we can use:',
+      options: ["+ operator", "ternary operator", "if-else operator", "there is no other substitute for if-else statement"],
+      correctAnswer: "ternary operator",
     },
+    {
+      id: 3,
+      question: 'For checking two conditions to execute a block of code, we can use:',
+      options: ["Logical operators (&& , ||)", "nested if-else", "none", "Both A and B"],
+      correctAnswer: "Both A and B",
+    },
+    {
+      id: 4,
+      question: 'Identify the correct syntax for else if statement:',
+      options: ["if (condition) {...} elseif (condition) {...}", "if (condition) {...} else if (condition) {...}", "if (condition) {...} else-if (condition) {...}", "It is practically impossible to use else if statement"],
+      correctAnswer: "if (condition) {...} else if (condition) {...}",
+    },
+    {
+      id: 5,
+      question: 'Identify the correct syntax for nested if statement:',
+      options: ["if (condition) {...} if (condition) {...}", "if (condition) {... if (condition) {...} ...}", "Both A and B", "none"],
+      correctAnswer: "if (condition) {... if (condition) {...} ...}",
+    },
+    
   ];
   const handleAnswerChange = (questionId, selectedAnswer) => {
     setAnswers((prevAnswers) => ({
@@ -68,7 +86,7 @@ const Quiz11 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz10">
                 <button
                   class="ui primary button"
                   style={{
@@ -80,7 +98,7 @@ const Quiz11 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz12">
                 <button
                   class="ui primary button"
                   style={{
@@ -95,20 +113,23 @@ const Quiz11 = () => {
               </Link>
               <br />
               <div class="start content">
-                An Overview of Computers and Programming Languages
+                Conditional Statements
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Introduction to C++
+                Quiz # 11
               </h2>
+              <span class="tut-btn"><Link to="/tutorials/Chapter11">
+                  <button class="ui secondary button">Read Tutorial</button>
+                </Link></span>
               <div class="ui clearing divider"></div>
               <div>
-                {questions.map((question) => (
+                {questions.map((question,i) => (
                   <div key={question.id}>
                     <div class="con">
-                      <div class="que">{question.question}</div>
+                    <div class="que">Q{i+1}:<span class="one-per-left-margin">{question.question}</span></div>
                       {question.options.map((option) => (
                         <label class="label" key={option}>
                           <input
@@ -120,7 +141,7 @@ const Quiz11 = () => {
                               handleAnswerChange(question.id, e.target.value)
                             }
                           />
-                          {option}
+                          <span className="one-per-left-margin">{option}</span>
                           <br />
                         </label>
                       ))}
@@ -150,31 +171,31 @@ const Quiz11 = () => {
 
               <br />
             </div>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                }}
-              >
-                Previous
-              </button>
-            </Link>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                  float: "right",
-                }}
-              >
-                <span> Next</span>
-              </button>
-            </Link>
+            <Link to="/quizes/quiz10">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                  }}
+                >
+                  Previous
+                </button>
+              </Link>
+              <Link to="/quizes/quiz12">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
             <br />
           </div>
         </div>

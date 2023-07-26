@@ -353,7 +353,7 @@ int main(){
               <b>Passing values to functions:</b>
               <br />
               We have studied that how can we pass data value to a function.
-              This is called pass by value method. <br />
+              This is called pass by value method. <br />We are actually passing the address of our variable, where our data is stored. <br />
               <b>Pass by reference:</b>
               <br />
               <div style={containerStyle}>
@@ -470,14 +470,16 @@ int main(){
                     {code11}
                   </SyntaxHighlighter>
                 </div>
-              </div><br/>
-              <hr />
-              <br />
-              <br />
+              </div>
+              <div className="quiz">
+                <Link to="/quizes/quiz19">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Practice Questions:
               </h2>
-              <br />
+              
               <br />
               <br />
               <Q18 />

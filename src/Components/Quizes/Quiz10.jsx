@@ -7,7 +7,7 @@ import "./Quiz.css";
 import "../Chapters/Chapters.css";
 import Modal from "react-modal";
 
-const Quiz9 = () => {
+const Quiz10 = () => {
   const [answers, setAnswers] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -86,7 +86,7 @@ const Quiz9 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz9">
                 <button
                   class="ui primary button"
                   style={{
@@ -98,7 +98,7 @@ const Quiz9 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz3">
+              <Link to="/quizes/quiz11">
                 <button
                   class="ui primary button"
                   style={{
@@ -113,14 +113,17 @@ const Quiz9 = () => {
               </Link>
               <br />
               <div class="start content">
-                An Overview of Computers and Programming Languages
+                Strings
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Introduction to C++
+                Quiz # 10
               </h2>
+              <span class="tut-btn"><Link to="/tutorials/Chapter10">
+                  <button class="ui secondary button">Read Tutorial</button>
+                </Link></span>
               <div class="ui clearing divider"></div>
               <div>
                 {questions.map((question,i) => (
@@ -168,31 +171,31 @@ const Quiz9 = () => {
 
               <br />
             </div>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                }}
-              >
-                Previous
-              </button>
-            </Link>
-            <Link to="/quizes/quiz3">
-              <button
-                class="ui primary button"
-                style={{
-                  flex: 1,
-                  minWidth: "100px",
-                  height: "40px",
-                  float: "right",
-                }}
-              >
-                <span> Next</span>
-              </button>
-            </Link>
+            <Link to="/quizes/quiz9">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                  }}
+                >
+                  Previous
+                </button>
+              </Link>
+              <Link to="/quizes/quiz11">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
             <br />
           </div>
         </div>
@@ -204,4 +207,4 @@ const Quiz9 = () => {
     </>
   );
 };
-export default Quiz9;
+export default Quiz10;

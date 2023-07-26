@@ -102,7 +102,7 @@ const Sidebar = ({children}) => {
         <div className="container">
            <div style={{width: isOpen ? "200px" : "200px"}} className="sidebar">
                <div className="top_section">
-                   <h1 style={{display: isOpen ? "block" : "block", fontSize:'25px'}} className="logo"><b style={{color:'black'}}>C++Tutorial</b></h1>
+                   <h1 style={{display: isOpen ? "block" : "block", fontSize:'25px'}} className="logo"><b style={{color:'black'}}>C++ Quiz</b></h1>
                    
                </div>
                {
