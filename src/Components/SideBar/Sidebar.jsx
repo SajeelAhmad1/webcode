@@ -103,6 +103,19 @@ const Sidebar = ({children}) => {
             path:"/tutorials/Chapter20",
             name:"Classes and Objects",
         },
+        {
+            path:"/tutorials/Chapter21",
+            name:"Constructors and Destructors",
+        },
+        {
+            path:"/tutorials/Chapter22",
+            name:"Access Specifiers",
+        },
+        {
+            path:"/tutorials/Chapter23",
+            name:"Friend Functions and Friend Classes",
+        },
+
         
     ]
     return (

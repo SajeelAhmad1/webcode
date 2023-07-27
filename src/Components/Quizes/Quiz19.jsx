@@ -62,8 +62,8 @@ const Quiz19 = () => {
     {
       id: 7,
       question: 'Overloaded functions have:',
-      options: ["same name", "same name but number or datatypes of parameters must be different", "sequence of parameters can be different", "Both Band C"],
-      correctAnswer: "Both Band C",
+      options: ["same name", "same name but number or datatypes of parameters must be different", "sequence of parameters can be different", "All of these"],
+      correctAnswer: "All of these",
     },
     
     

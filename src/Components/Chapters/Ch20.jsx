@@ -133,6 +133,29 @@ int main(){
 	cout<<"Behaviour no 3 of my object2 is multiplication. Multiplication = "<<Calc2.mul()<<endl;
 	cout<<"Behaviour no 4 of my object2 is division. Division = "<<Calc2.div()<<endl;
 }`;
+const code5 = `#include <iostream>
+using namespace std;
+class Sum{
+	private:
+		int a, b;
+	public:
+		Sum(int a, int b){
+			this->a = a;
+			this->b = b;
+		}
+		int sum();
+};
+
+//defining method of class outside the class
+
+Sum :: sum(){
+	return a+b;
+}
+int main(){
+	Sum sum1(10, 20);
+	cout<<sum1.sum();
+}
+`
   return (
     <>
       <Sidebar>
@@ -239,7 +262,7 @@ int main(){
                 <b>Member Functions:</b>
                 <br />
                 Members functions are defined inside the class and they show the
-                behavior of objects. <br />
+                behavior of objects. They are also called <b>methods.</b><br />
                 If I say, "My brother can say hello". This is the behavior of my
                 brother. <br />
                 <b>Example:</b>
@@ -285,7 +308,30 @@ int main(){
                       {code4}
                     </SyntaxHighlighter>
                   </div>
-                </div>
+                </div><br />
+                If we want to keep the code inside the class clean, we can declare functions inside class and define them 
+                outside the class using scope resolution operator(::). <br />
+                <b>Example:</b><br />
+                <div style={containerStyle}>
+                  <div style={{ fontSize: "25px" }}>
+                    <b>class.cpp</b>
+
+                    <i
+                      class="copy icon"
+                      onClick={copyContent}
+                      style={{
+                        cursor: "pointer",
+                        float: "right",
+                        fontSize: "20px",
+                      }}
+                    ></i>
+                  </div>
+                  <div ref={divRef}>
+                    <SyntaxHighlighter language="cpp" style={darcula}>
+                      {code5}
+                    </SyntaxHighlighter>
+                  </div>
+                </div><br />
                 <br />
                 <p style={{ backgroundColor: "#FBEEAC", padding: "15px" }}>
                   Have you noticed? the behavior of objects changes as data
