@@ -95,6 +95,14 @@ const Sidebar = ({children}) => {
             path:"/tutorials/Chapter18b",
             name:"Built-in Functions",
         },
+        {
+            path:"/tutorials/Chapter19",
+            name:"OOP",
+        },
+        {
+            path:"/tutorials/Chapter20",
+            name:"Classes and Objects",
+        },
         
     ]
     return (

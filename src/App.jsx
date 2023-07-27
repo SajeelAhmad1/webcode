@@ -20,6 +20,8 @@ import Ch15 from './Components/Chapters/Ch15';
 import Ch16 from './Components/Chapters/Ch16';
 import Ch17 from './Components/Chapters/Ch17';
 import Ch18 from './Components/Chapters/Ch18';
+import Ch19 from './Components/Chapters/Ch19';
+import Ch20 from './Components/Chapters/Ch20'
 import Header from './Components/Home/NewHeader.jsx';
 import Projects from './Components/Projects/Projects.jsx';
 import CppatGlance from './Components/CppatGlance/CppatGlance.jsx';
@@ -45,6 +47,7 @@ import Quiz17 from './Components/Quizes/Quiz17'
 import Quiz18 from './Components/Quizes/Quiz18'
 import Quiz19 from './Components/Quizes/Quiz19'
 import Quiz20 from './Components/Quizes/Quiz20'
+import TypingSpeedChecker from './Components/Typing'
 
 
 
@@ -75,6 +78,8 @@ const App = () => {
       <Route path="/tutorials/Chapter17" element={<Ch17 />} />
       <Route path="/tutorials/Chapter18" element={<Ch18 />} />
       <Route path="/tutorials/Chapter18b" element={<Ch18b />} />
+      <Route path="/tutorials/Chapter19" element={<Ch19 />} />
+      <Route path="/tutorials/Chapter20" element={<Ch20 />} />
       <Route path='/' element={<Home/>} />
       <Route path='/services' element={<Services/>}/>
       <Route path='/projects' element={<Projects/>}/>
