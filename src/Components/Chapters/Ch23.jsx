@@ -134,7 +134,7 @@ int main() {
                   Previous
                 </button>
               </Link>
-              <Link to="/tutorials/Chapter23">
+              <Link to="/tutorials/Chapter24">
                 <button
                   class="ui primary button"
                   style={{
@@ -253,7 +253,7 @@ int main() {
                 Previous
               </button>
             </Link>
-            <Link to="/tutorials/Chapter23">
+            <Link to="/tutorials/Chapter24">
               <button
                 class="ui primary button"
                 style={{

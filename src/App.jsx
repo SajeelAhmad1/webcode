@@ -25,6 +25,10 @@ import Ch20 from './Components/Chapters/Ch20';
 import Ch21 from './Components/Chapters/Ch21';
 import Ch22 from './Components/Chapters/Ch22'
 import Ch23 from './Components/Chapters/Ch23'
+import Ch24 from './Components/Chapters/Ch24'
+import Ch25 from './Components/Chapters/Ch25'
+import Ch26 from './Components/Chapters/Ch26'
+import Ch27 from './Components/Chapters/Ch27'
 import Header from './Components/Home/NewHeader.jsx';
 import Projects from './Components/Projects/Projects.jsx';
 import CppatGlance from './Components/CppatGlance/CppatGlance.jsx';
@@ -86,6 +90,10 @@ const App = () => {
       <Route path="/tutorials/Chapter21" element={<Ch21 />} />
       <Route path="/tutorials/Chapter22" element={<Ch22 />} />
       <Route path="/tutorials/Chapter23" element={<Ch23 />} />
+      <Route path="/tutorials/Chapter24" element={<Ch24 />} />
+      <Route path="/tutorials/Chapter25" element={<Ch25 />} />
+      <Route path="/tutorials/Chapter26" element={<Ch26 />} />
+      <Route path="/tutorials/Chapter27" element={<Ch27 />} />
       <Route path='/' element={<Home/>} />
       <Route path='/services' element={<Services/>}/>
       <Route path='/projects' element={<Projects/>}/>

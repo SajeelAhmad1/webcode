@@ -115,6 +115,22 @@ const Sidebar = ({children}) => {
             path:"/tutorials/Chapter23",
             name:"Friend Functions and Friend Classes",
         },
+        {
+            path:"/tutorials/Chapter24",
+            name:"Encapsulation",
+        },
+        {
+            path:"/tutorials/Chapter25",
+            name:"Inheritance",
+        },
+        {
+            path:"/tutorials/Chapter26",
+            name:"Polymorphism",
+        },
+        {
+            path:"/tutorials/Chapter27",
+            name:"Abstraction",
+        },
 
         
     ]

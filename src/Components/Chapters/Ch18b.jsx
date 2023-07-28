@@ -500,6 +500,7 @@ radians as a floating number.
               >
                 Previous
               </button></Link>
+              <Link to="/tutorials/Chapter19">
                 <button
                   class="ui primary button"
                   style={{
@@ -510,7 +511,7 @@ radians as a floating number.
                   }}
                 >
                   <span> Next</span>
-                </button>
+                </button></Link>
           </div>
         </div>
       </Sidebar>
