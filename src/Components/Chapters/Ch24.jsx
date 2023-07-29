@@ -146,6 +146,11 @@ int main() {
                         <li>Guarantees security.</li>
                         <li>If you want your class members unchanged, encapsulation will help you.</li>
                     </ul>
+                    <div className="quiz">
+                <Link to="/quizes/quiz26">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               </p><br />
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Practice Questions:

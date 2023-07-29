@@ -182,7 +182,8 @@ int main()
                     </SyntaxHighlighter>
                   </div>
                 </div>
-                <br /><br />
+                <br />
+                <br />
                   In the following code, we are creating a file, and when we execute the program a file is created in the directory 
                   where your program is located. When you give input on console, the input will be saved in that file.
                 <div style={containerStyle}>
@@ -206,7 +207,11 @@ int main()
                 </div>
               </div>
 
-              </p><br />
+              </p><br /><div className="quiz">
+                <Link to="/quizes/quiz31">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Practice Questions:
               </h2>

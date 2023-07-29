@@ -194,6 +194,11 @@ int main(){
                 </p>
                 
                 <br />
+                <div className="quiz">
+                <Link to="/quizes/quiz29">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               </p>
               <br />
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>

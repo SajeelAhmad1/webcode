@@ -56,7 +56,17 @@ import Quiz17 from './Components/Quizes/Quiz17'
 import Quiz18 from './Components/Quizes/Quiz18'
 import Quiz19 from './Components/Quizes/Quiz19'
 import Quiz20 from './Components/Quizes/Quiz20'
-import TypingSpeedChecker from './Components/Typing'
+import Quiz21 from './Components/Quizes/Quiz21'
+import Quiz22 from './Components/Quizes/Quiz22'
+import Quiz23 from './Components/Quizes/Quiz23'
+import Quiz24 from './Components/Quizes/Quiz24'
+import Quiz25 from './Components/Quizes/Quiz25'
+import Quiz26 from './Components/Quizes/Quiz26'
+import Quiz27 from './Components/Quizes/Quiz27'
+import Quiz28 from './Components/Quizes/Quiz28'
+import Quiz29 from './Components/Quizes/Quiz29'
+import Quiz30 from './Components/Quizes/Quiz30'
+import Quiz31 from './Components/Quizes/Quiz31'
 
 
 
@@ -123,6 +133,17 @@ const App = () => {
       <Route path="/quizes/quiz18" element={<Quiz18/>}/>
       <Route path="/quizes/quiz19" element={<Quiz19/>}/>
       <Route path="/quizes/quiz20" element={<Quiz20/>}/>
+      <Route path="/quizes/quiz21" element={<Quiz21/>}/>
+      <Route path="/quizes/quiz22" element={<Quiz22/>}/>
+      <Route path="/quizes/quiz23" element={<Quiz23/>}/>
+      <Route path="/quizes/quiz24" element={<Quiz24/>}/>
+      <Route path="/quizes/quiz25" element={<Quiz25/>}/>
+      <Route path="/quizes/quiz26" element={<Quiz26/>}/>
+      <Route path="/quizes/quiz27" element={<Quiz27/>}/>
+      <Route path="/quizes/quiz28" element={<Quiz28/>}/>
+      <Route path="/quizes/quiz29" element={<Quiz29/>}/>
+      <Route path="/quizes/quiz30" element={<Quiz30/>}/>
+      <Route path="/quizes/quiz31" element={<Quiz31/>}/>
       </Routes>
       
       

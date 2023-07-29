@@ -33,9 +33,9 @@ const Ch26 = () => {
     marginLeft: "0%",
   };
   const code1 = `#include <iostream>
-  using namespace std;
+using namespace std;
   
-  class MathOperations {
+class MathOperations {
   public:
       int add(int a, int b) {
           return a + b;
@@ -44,16 +44,15 @@ const Ch26 = () => {
       int add(int a, int b, int c) {
           return a + b + c;
       }
-  };
+};
   
-  int main() {
-      MathOperations mathOp;
-      cout << mathOp.add(2, 3) << endl;         // Output: 5
-      cout << mathOp.add(2, 3, 4) << endl;     // Output: 9
+int main() {
+    MathOperations mathOp;
+    cout << mathOp.add(2, 3) << endl;         // Output: 5
+    cout << mathOp.add(2, 3, 4) << endl;     // Output: 9
   
-      return 0;
-  }
-  `;
+    return 0;
+}`;
   const code2 = `#include <iostream>
 using namespace std;
   
@@ -248,6 +247,11 @@ int main() {
                     </tr>
                   </tbody>
                 </table>
+                <div className="quiz">
+                <Link to="/quizes/quiz28">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               </p>
               <br />
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>

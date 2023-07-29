@@ -261,8 +261,195 @@ cos(x);
 sin(x);
 tan(x);
 log(x);
-log10(x);
-`
+log10(x);`
+const code19 = `// Syntax for class
+class class_name{
+  //access modifier
+  public / private / protected:
+  // class members
+};
+int main(){
+  //Syntax for creating object
+  class_name obj_name;
+}`
+const code20 = `class A{
+  public:
+  //constructor
+  A(){
+    //code goes here
+  }
+
+  //destructor
+  ~A(){
+    //code goes here
+  }
+};`
+const code21 = `class className{
+  friend returnType funcName(dataType params...);
+};
+returnType funcName(dataType params...) {
+  // Function definition with access to private and protected members of the class
+}`
+const code22 = `class MyClass
+{
+    friend class FriendClass;
+};`
+const code23 = `class class_name{
+  private:
+    //data members
+  public:
+    //member functions to access data members
+};`
+const code24 = `//Single Inheritance
+class BaseClass {
+  // Base class members
+};
+class DerivedClass : public BaseClass {
+  // Derived class members
+};
+
+
+//Multiple Inheritance
+class Shape { 
+  protected:
+    int length;
+    int width;
+  public:
+    // Parametrized constructor
+    Shape(int length, int width) {
+      this->length = length;
+      this->width = width;
+    }
+};
+class Triangle : public Shape {
+  public:
+    // Parametrized constructor
+    Triangle(int base, int height) : Shape(base, height) {
+  }
+};
+
+
+//Multi-level Inheritance
+class Shape { 
+  protected:
+    int length;
+    int width;
+  public:
+    // Parametrized constructor
+    Shape(int length, int width) {
+      this->length = length;
+      this->width = width;
+    }
+};
+class Triangle : public Shape {
+  public:
+    // Parametrized constructor
+    Triangle(int base, int height) : Shape(base, height) {
+  }
+};
+
+
+//Hierarchical Inheritance
+class Shape { 
+  protected:
+    int length;
+    int width;
+  public:
+    // Parametrized constructor
+    Shape(int length, int width) {
+      this->length = length;
+      this->width = width;
+    }
+};
+class Triangle : public Shape {
+  public:
+    // Parametrized constructor
+    Triangle(int base, int height) : Shape(base, height) {
+  }
+};
+
+
+//Hybrid Inheritance
+class Shape { 
+  protected:
+    int length;
+    int width;
+  public:
+    // Parametrized constructor
+    Shape(int length, int width) {
+      this->length = length;
+      this->width = width;
+    }
+};
+class Triangle : public Shape {
+  public:
+    // Parametrized constructor
+    Triangle(int base, int height) : Shape(base, height) {
+  }
+};`
+const code25 = `// Compile time Polymorphism
+class MathOperations {
+  public:
+      int add(int a, int b) {
+          // code goes here
+      }
+      // Overloaded function
+      int add(int a, int b, int c) {
+          // code goes here
+      }
+};
+Run time Polymorphism
+class Animal {
+  public:
+    virtual void make_sound() {
+      // code goes here
+    }
+};
+  
+class Dog : public Animal {
+  public:
+    // Overriding make_sound() function
+    void make_sound() override {
+      // redefining make_sound() function
+    }
+};
+  
+class Cat : public Animal {
+  public:
+    // Overriding make_sound() function
+    void make_sound() override {
+      // redefining make_sound() function
+    }
+};`
+const code26 = `class Animals{
+  public:
+    // pure virtual function
+    virtual void behavior() = 0;
+};
+
+class Lion : public Animals{
+ public:
+   void behavior(){
+     // redefining behavior() function for Lion class
+";
+   }
+};
+
+class Donkey : public Animals{
+ public:
+   void behavior(){
+    // redefining behavior() function for Donkey class
+";
+   }
+};`
+const code27 = `try {
+  // here goes the code and if there is an error throw exception
+  throw exception; 
+}
+catch () {
+  // Block of code to handle errors
+}`
+
   return (
     <>
       <div>
@@ -451,6 +638,105 @@ log10(x);
             <div >
               <SyntaxHighlighter language="cpp" >
                 {code18}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Object Oriented Programming <br /> Classes and Objects</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code19}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Constructors and destructors</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code20}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Friend Functions</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code21}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Friend Classes</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code22}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Encapsulation</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code23}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Inheritance</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code24}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Polymorphism</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code25}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Abstraction</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code26}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Exceptions</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code27}
               </SyntaxHighlighter>
             </div>
           </p><br/><br/>

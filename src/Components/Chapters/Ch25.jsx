@@ -239,7 +239,7 @@ class Triangle : public Shape {
                 <b>Example</b>
                 <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}>
-                    <b>class.cpp</b>
+                    <b>inheritance.cpp</b>
 
                     <i
                       class="copy icon"
@@ -355,7 +355,7 @@ class Triangle : public Shape {
                 One parent class has one child class.
                 <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}>
-                    <b>class.cpp</b>
+                    <b>inheritance.cpp</b>
 
                     <i
                       class="copy icon"
@@ -381,7 +381,7 @@ class Triangle : public Shape {
                 one base class. One child and many parents.
                 <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}>
-                    <b>class.cpp</b>
+                    <b>inheritance.cpp</b>
 
                     <i
                       class="copy icon"
@@ -410,7 +410,7 @@ class Triangle : public Shape {
                 child/grandson(class3).
                 <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}>
-                    <b>class.cpp</b>
+                    <b>inheritance.cpp</b>
 
                     <i
                       class="copy icon"
@@ -436,7 +436,7 @@ class Triangle : public Shape {
                 the same parent class. Many child, one parent.
                 <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}>
-                    <b>class.cpp</b>
+                    <b>inheritance.cpp</b>
 
                     <i
                       class="copy icon"
@@ -463,7 +463,7 @@ class Triangle : public Shape {
                 and is generally seen in complex class hierarchies.
                 <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}>
-                    <b>class.cpp</b>
+                    <b>inheritance.cpp</b>
 
                     <i
                       class="copy icon"
@@ -504,6 +504,11 @@ class Triangle : public Shape {
                     </SyntaxHighlighter>
                   </div>
                 </div>
+                <div className="quiz">
+                <Link to="/quizes/quiz27">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
               </p>
               <br />
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>

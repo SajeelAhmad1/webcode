@@ -241,7 +241,7 @@ int main() {
               <div class="ui clearing divider"></div>
               <p>
                 A constructor is a special method which is automatically called whenever an instance of class is created. 
-                It is used to initialize objects of a class. A constructor os also used to run a default code when an object is created.<br />
+                It is used to initialize objects of a class. A constructor is also used to run a default code when an object is created.<br />
                 <br />
                 <b>Properties of Constructor:</b>
                 <br />
@@ -456,6 +456,11 @@ int main() {
                     </SyntaxHighlighter>
                   </div>
                 </div><br />
+                <div className="quiz">
+                <Link to="/quizes/quiz23">
+                  <button class="ui secondary button">Start Quiz</button>
+                </Link>
+              </div>
             </p>
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Practice Questions:

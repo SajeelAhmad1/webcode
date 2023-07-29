@@ -95,6 +95,50 @@ const Sidebar = ({children}) => {
             path:"/quizes/quiz20",
             name:"Quiz  20",
         },
+        {
+            path:"/quizes/quiz21",
+            name:"Quiz  21",
+        },
+        {
+            path:"/quizes/quiz22",
+            name:"Quiz  22",
+        },
+        {
+            path:"/quizes/quiz23",
+            name:"Quiz  23",
+        },
+        {
+            path:"/quizes/quiz24",
+            name:"Quiz  24",
+        },
+        {
+            path:"/quizes/quiz25",
+            name:"Quiz  25",
+        },
+        {
+            path:"/quizes/quiz26",
+            name:"Quiz  26",
+        },
+        {
+            path:"/quizes/quiz27",
+            name:"Quiz  27",
+        },
+        {
+            path:"/quizes/quiz28",
+            name:"Quiz  28",
+        },
+        {
+            path:"/quizes/quiz29",
+            name:"Quiz  29",
+        },
+        {
+            path:"/quizes/quiz30",
+            name:"Quiz  30",
+        },
+        {
+            path:"/quizes/quiz31",
+            name:"Quiz  31",
+        },
         
     ]
     return (
