@@ -28,6 +28,9 @@ const Q15 = () => {
         <b>Q9: </b>Write a program that input five float type value in an array and displays the values in reverse order. <br />
         <b>Q10: </b>Write a program that that inputs several students in a class from user. It then declares a dynamic array with same number of elements. It inputs the marks of students and then displays the average marks of the whole class. Also gives a choice at end to modify the marks of any student. And then calculates the average accordingly. <br />
         <b>Q11: </b>Write a program that inputs current day and month from the user.It then calculates and displays the total number of days in current year till the entered date using arrays. <br />
+        <b>Q12: </b> Write a program that inputs 07 no’s from the user in array and print the minimum prime 
+value in array along with its location. Then copy this minimum value at the first index of 
+the array. <br />
 
         </div>
   )

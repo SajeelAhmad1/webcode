@@ -40,12 +40,14 @@ class Employee{
     int salary;
 
   public:
-    // Setter function setting salary of private data member
+    // Setter function setting salary of private data member. Its 
+    // name could also be setSalary or any other name you want
     void setter(int salary) {
-    	//this is a pointer which refers to the members of class
+    	//this is a pointer which refers to the members of class. 
       	this->salary = salary;
     }
-    // Getter function getting salary of private data member
+    // Getter function getting salary of private data member. Its 
+    // name could also be getSalary or any other name you want
     int getter() {
     	return salary;
     }
@@ -96,15 +98,27 @@ int main() {
               </h2>
               <div class="ui clearing divider"></div>
               <p>
-                Encapsulation is the wrapping up of class members. It is used to
+                Encapsulation is the wrapping up of class members under a single unit. In OOP, we say
+                that encapsulation is the binding of data and functions that manipulates them. It is used to
                 hide sensitive data from users. If you want to access private
-                data, you will use getter and setter functions. <br />
+                data, you will use getter and setter functions. <br /><br />
                 <b>Getter and Setter Functions:</b>
                 <br />
                 These are public functions which are used to get and set the
                 value of private data. They are not something special and
-                implemented like simple functions.
+                implemented like simple functions. Getter or setter are not the keywords. 
+                These are just simple terms used for the functions. The function which sets 
+                the value of data members is called setter, and the function with the help of which 
+                we can access values in the main function is called getter function.
                 <br />
+                <br />
+                <b>Encapsulation and real life example:</b><br />
+                There is a library in a school. A librarian keeps the records of books.
+                A student takes a book and does not return after the issued due date. The librarian 
+                needs the data(can be private) of student to contact him. He will contact the students 
+                information section of school which will provide him data (getter function) to get data of the student. He does not has direct access to the data.
+                <br />
+                
                 <br />
                 <b>Syntax</b>
                 <div style={containerStyle}>
@@ -127,7 +141,7 @@ int main() {
                 If a class has all its data members private, it is called fully encapsulated class.
                     <br /><br />
                     <b>Why Encapsulation:</b><br />
-                    <ul clas='ui unordered list'>
+                    <ul class='ui unordered list'>
                         <li>You can hide your data.</li>
                         <li>Guarantees security.</li>
                         <li>If you want your class members unchanged, encapsulation will help you.</li>

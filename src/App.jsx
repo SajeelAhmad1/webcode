@@ -29,6 +29,8 @@ import Ch24 from './Components/Chapters/Ch24'
 import Ch25 from './Components/Chapters/Ch25'
 import Ch26 from './Components/Chapters/Ch26'
 import Ch27 from './Components/Chapters/Ch27'
+import Ch28 from './Components/Chapters/Ch28'
+import Ch29 from './Components/Chapters/Ch29'
 import Header from './Components/Home/NewHeader.jsx';
 import Projects from './Components/Projects/Projects.jsx';
 import CppatGlance from './Components/CppatGlance/CppatGlance.jsx';
@@ -94,6 +96,8 @@ const App = () => {
       <Route path="/tutorials/Chapter25" element={<Ch25 />} />
       <Route path="/tutorials/Chapter26" element={<Ch26 />} />
       <Route path="/tutorials/Chapter27" element={<Ch27 />} />
+      <Route path="/tutorials/Chapter28" element={<Ch28 />} />
+      <Route path="/tutorials/Chapter29" element={<Ch29 />} />
       <Route path='/' element={<Home/>} />
       <Route path='/services' element={<Services/>}/>
       <Route path='/projects' element={<Projects/>}/>

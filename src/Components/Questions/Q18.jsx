@@ -18,7 +18,8 @@ const Q18 = () => {
         <b>Q9: </b>Write a program to sort an array in ascending order using function. <br />
         <b>Q10: </b>Write a program for calculator that input two no.s and one arithmetic operator in main function and pass them to a function. The function applies arithmetic operation on two numbers on the basis of the operator entered by the user using switch statement. <br />
         <b>Q11: </b>Write a program to find the factorial of a given number by using function and also by using reference parameters. <br />
-        
+        <b>Q12: </b>Write a program to give user a choice to execute all previous ten programs (i.e 1. To 10. )
+using functions. <br />
     </div>
   )
 }

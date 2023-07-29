@@ -22,12 +22,7 @@ const Q14 = () => {
         4444 <br />
         55555 <br />
 
-        <b>Q12: </b>Write a program that displays the following using do-while loop. <br />
-        99999 <br />
-        7777 <br />
-        555 <br />
-        33 <br />
-        1 <br />
+        <b>Q12: </b>Write the code for do-while loop using fibonacci series. <br />
         
 
     </div>

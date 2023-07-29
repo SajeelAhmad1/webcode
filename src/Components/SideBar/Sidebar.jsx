@@ -131,6 +131,14 @@ const Sidebar = ({children}) => {
             path:"/tutorials/Chapter27",
             name:"Abstraction",
         },
+        {
+            path:"/tutorials/Chapter28",
+            name:"Exceptions",
+        },
+        {
+            path:"/tutorials/Chapter29",
+            name:"File Handling",
+        },
 
         
     ]

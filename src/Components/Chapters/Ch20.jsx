@@ -338,6 +338,14 @@ int main(){
                   members changes. If data members of two objects are same,
                   their behavior is same.
                 </p>
+                <br />
+                <b>Local Variables: </b><br />
+                Local Variables are declared and initialized inside the methods, constructors or blocks. They will be destroyed 
+                when method has completed. <br />
+                <b>Instance Variables: </b><br />
+                Instance variables are defined within a class but outside methods. They are initialized when the class is instantiated. <br />
+                <b>Class Variables: </b><br />
+                These are declared within a class outside methods with static keyword. <br />
               </p>
               <br />
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>

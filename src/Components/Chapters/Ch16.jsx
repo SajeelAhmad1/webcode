@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./Chapters.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
+import Q16 from "../Questions/Q16";
 import Sidebar from "../SideBar/Sidebar";
 import Footer from "../Home/Footer";
 import { ToastContainer, toast } from "react-toastify";
@@ -297,6 +298,7 @@ char grade;//1byte
                   <button class="ui secondary button">Start Quiz</button>
                 </Link>
               </div>
+              <Q16/>
               </div>
             <Link to="/tutorials/Chapter15">
               

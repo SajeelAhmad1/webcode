@@ -117,28 +117,36 @@ int main(){
 }`
 const code6 = `#include <iostream>
 using namespace std;
-
-class SimpleClass {
-public:
-    int data;
-
-    // Constructor
-    SimpleClass(int value) : data(value) {}
-
-    // Copy constructor
-    SimpleClass(const SimpleClass& other) : data(other.data) {}
+// declare a class
+class square {
+	private:
+	 double length;
+	 double height;
+	public:
+	 // initialize variables with parameterized constructor
+	 square(double len, double hgt) {
+	 length = len;
+	 height = hgt;
+	 }
+	 // copy constructor with a square object as parameter
+	 // copies data of the obj parameter
+	square(square &obj) {
+	 length = obj.length;
+	 height = obj.height;
+	 }
+	 double calculateArea() {
+	 return length * height;
+	 }
 };
-
 int main() {
-    SimpleClass obj1(42); // Create an object using the constructor
-
-    // Create a new object as a copy of obj1 using the copy constructor
-    SimpleClass obj2 = obj1;
-
-    // Access data in obj2
-    cout << "Data in obj2: " << obj2.data << endl;
-
-    return 0;
+	// create an object of square class
+	square square1(10.5, 8.6);
+	// copy contents of square1 to square2
+	square square2 = square1;
+	// print areas of square1 and square2
+	cout << "Area of square 1: " << square1.calculateArea() << endl;
+	cout << "Area of square 2: " << square2.calculateArea();
+	return 0;
 }`
 const code7 = `#include <iostream>
 using namespace std;
@@ -232,8 +240,9 @@ int main() {
               </h2>
               <div class="ui clearing divider"></div>
               <p>
-                A constructor is a special method which is automatically called whenever an instance of class is created. <br /> <br />
-                <br /><br />
+                A constructor is a special method which is automatically called whenever an instance of class is created. 
+                It is used to initialize objects of a class. A constructor os also used to run a default code when an object is created.<br />
+                <br />
                 <b>Properties of Constructor:</b>
                 <br />
                 <ul className="ui unordered list">
@@ -257,7 +266,13 @@ int main() {
                 inside the class. <br />
                 <br />
                 <br />
-                
+                <b>Understanding Constructors using real life example:</b><br />
+                Suppose you went to a shop to buy a pen. You say to the shop keeper, give me a marker. 
+                You are not specifying the brand or ink color. He will give you the most hot marker selling
+                in the market. This is the default constructor. If you say give me a marker of xyz brand and ink 
+                should be blue, this is parameterized constructor. And if you take a marker with you and show it 
+                to the shopkeeper and say that give me a marker like this. This is your copy constructor. Let us explore 
+                some more details. <br /> <br />
                 <b>Syntax</b>
                 <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}></div>
@@ -316,6 +331,10 @@ int main() {
                   </div>
                   </div>
                   <br />
+                  <p style={{ backgroundColor: "#FBEEAC", padding: "15px" }}>
+                  If we do not specify a constructor, C++ compiler generates a default constructor for object 
+(expects no parameters and has an empty body)</p> <br />
+
                   <b>"this" keyword:</b><br />
                   this refers to the member of current class in which we are present. <br />
                   <SyntaxHighlighter language="cpp" style={darcula}>
@@ -349,6 +368,7 @@ int main() {
                     <b>Copy Constructor:</b><br />
                     The copy constructor creates a new object by copying the values from existing object of class 
                     to other object of the same class.Copy constructor takes a reference to an object of the same class as an argument.
+                    Simply, copy constructor copies values from one object to another object.
                     <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}>
                     <b>class.cpp</b>
@@ -402,7 +422,19 @@ int main() {
                   </div><br />
                   <b>Destructors:</b><br />
                   Destructors are called whenever object is destroyed. It is used to deallocate memory.
-                  <br />It is automatically called at the end of program. <br /><br />
+                  <br />It is automatically called at the end of program. 
+                  <br />
+                  <b>Properties of destructor:</b><br />
+                  <ul class="ui unordered list">
+                    <li>Destructor is the last function which is invoked when the object is destroyed.</li>
+                    <li>Its name is the name of the class.</li>
+                    <li>It is always public.</li>
+                    <li>It can not be static or constant.</li>
+                    <li>It is always unparameterized.</li>
+                    <li>It has no return type even void.</li>
+                    <li>We can not access the address of destructor.</li>
+                  </ul>
+                  <br /><br />
                   <b>Syntax:</b><br />
                   <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}>

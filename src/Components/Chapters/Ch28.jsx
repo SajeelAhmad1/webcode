@@ -2,14 +2,14 @@ import { useRef } from "react";
 import "./Chapters.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
-import Q27 from "../Questions/Q27";
+import Q28 from "../Questions/Q28";
 import Sidebar from "../SideBar/Sidebar";
 import Footer from "../Home/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 
-const Ch24 = () => {
+const Ch28 = () => {
   const divRef = useRef(null);
 
   const copyContent = () => {
@@ -32,44 +32,54 @@ const Ch24 = () => {
     borderRadius: "3px",
     marginLeft: "0%",
   };
-  const code1 = `class Parent{
-    public:
-    //delete the definition of virtual function and put it equal to 0.
-    virtual void makeSound() = 0;
-};`;
-
-  const code2 = `#include <iostream>
+const code1 = `try {
+    // here goes the code and if there is an error throw exception
+    throw exception; 
+  }
+  catch () {
+    // Block of code to handle errors
+  }`
+const code2 = `#include <iostream>
+#include <string>
 using namespace std;
-//this is the abstract class
-class Animals{
-    public:
- 		virtual void behavior() = 0;
-};
- 
-class Lion : public Animals{
- 	public:
- 		void behavior(){
- 			cout<<"Lion rules. \n";
-		 }
-};
- 
-class Donkey : public Animals{
- 	public:
- 		void behavior(){
- 			cout<<"Donkey works hard. \n";
-		 }
-};
- 
-int main(){
- 	Animals *animal1 = new Lion();
- 	/*as animal1 is a pointer to animal class therefore we are 
-	using -> operator instead of dot operator for accessing the members*/
- 	animal1->behavior();
- 	
- 	Animals *animal2 = new Donkey();
- 	animal2->behavior();
+
+int main() {
+	long long int ph;
+    try{
+		cout<<"Enter Phone number "<<endl;
+		cin>>ph;
+		if(ph){
+			cout<<"0"<<ph<<endl;
+		}
+		else
+		throw 505;
+		}
+		catch(...){
+			cout<<"Phone numer should be digits."<<endl;
+		}
+
     return 0;
-}`;
+}`
+const code3 = `#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+		int con;
+	cout<<"Press 1 if you are human'.";
+	cin>>con;
+   try {
+  	if (con == 1) {
+    	cout << "Access granted - you are human.";
+  	} else {
+    	throw 505;
+  	}
+}
+	catch (...) {
+  		cout << "Access denied - You are robot.\n";
+	}
+   return 0;
+}`
 
   return (
     <>
@@ -77,7 +87,7 @@ int main(){
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/tutorials/Chapter23">
+              <Link to="/tutorials/Chapter27">
                 <button
                   class="ui primary button"
                   style={{ flex: 1, minWidth: "100px", height: "40px" }}
@@ -85,7 +95,7 @@ int main(){
                   Previous
                 </button>
               </Link>
-              <Link to="/tutorials/Chapter25">
+              <Link to="/tutorials/Chapter29">
                 <button
                   class="ui primary button"
                   style={{
@@ -99,41 +109,19 @@ int main(){
                 </button>
               </Link>
               <br />
-              <div class="start content">Abstraction</div>
+              <div class="start content">Exceptions</div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Virtual and pure virtual functions
+                Handling Exceptions
               </h2>
               <div class="ui clearing divider"></div>
               <p>
-                <b>Virtual Functions:</b>
-                <br />
-                A virtual function is a function which is defined in base class
-                and redefined in derived class.
-                <br />
-                Virtual functions give us the ability of run time polymorphism.{" "}
-                <br />
-                <b>Rules for virtual functions:</b><br />
-                <ul class="ui unordered list">
-                  <li>They can not be static.</li>
-                  <li>Virtual function can be a friend function.</li>
-                  <li>They can be accessed using pointers of base class.</li>
-                  <li>They are alwaysdefined in main class and overridden in derived class.</li>
-                  <li>Virtual constructor is not allowed but virtual destructor is allowed.</li>
-                </ul>
-                When we call a virtual function using the pointer to base class, the most derived version of 
-                that function will be executed.
-                
-                We have discussed its implementation in our previous tutorial. <br />
-                <br />
-                <b>Pure Virtual Functions:</b>
-                <br />
-                Pure virtual function is the function declared in the parent
-                class but the parent class does not have its definition /
-                implementation. But all the child classes have their own
-                implementation of that function.
+                When we execute C++ code, you can face errors. You need to handle these errors. 
+                These errors can be due to wrong input or may be due to some other reason.
+                We have to tackle these errors. When a wrong input is given by a user, an error message 
+                should be shown on the screen.
                 <br /><br />
                 <b>Syntax</b>
                 <div style={containerStyle}>
@@ -145,28 +133,12 @@ int main(){
                   </div>
                 </div>
                 <br />
-                <b>Abstract Class:</b>
-                <br />
-                A class which has atleast one pure virtual function is called an
-                abstract class. In the above code, the class named "Parent" is an abstract class. <br />
-                <br />
                 <p style={{ backgroundColor: "#FBEEAC", padding: "15px" }}>
-                  <b>Note: </b>We can not make object of abstract class.
-                </p>
+                In try block, we write our normal code. <br />
+                If there is a problem in code, the throw keyword throws exception. <br />
+                The catch block has the code which is to be executed in case of error. </p>
                 <br />
-                <br />
-                <b>Abstraction:</b>
-                <br />
-                Abstraction is the hiding of implementation details of an object
-                and exposing only the relevant and essential details to the
-                users. <br />
-                <b>For example,</b> when you feel headache you take medicine. You only
-                take medicine. You get well and you do not know what is
-                happening inside your body after taking medicine. That hidden
-                details are abstractive for you. In short, in abstraction,
-                complex details are hidden behind simple methods. <br />
-                If you do not understand the example do not sweat it it, just move. <br />
-                <br />
+                Let us explore an example.
                 <div style={containerStyle}>
                   <div style={{ fontSize: "25px" }}>
                     <b>class.cpp</b>
@@ -188,23 +160,43 @@ int main(){
                   </div>
                 </div>
                 <br />
-                <p style={{ backgroundColor: "#FBEEAC", padding: "15px" }}>
-                  <b>Note: </b>When we make a pointer to a class, we then access the data members using arrow. 
-                  In this case, we can not use dot operator.
-                </p>
-                
+                <b>Explanation:</b><br />
+                In this example, our variable ph which takes input phone number in integers but if user input 
+                alphabet, it will throw an error.
                 <br />
-              </p>
-              <br />
+                <br />
+                <b>Another Example:</b><br />
+                <div style={containerStyle}>
+                  <div style={{ fontSize: "25px" }}>
+                    <b>class.cpp</b>
+
+                    <i
+                      class="copy icon"
+                      onClick={copyContent}
+                      style={{
+                        cursor: "pointer",
+                        float: "right",
+                        fontSize: "20px",
+                      }}
+                    ></i>
+                  </div>
+                  <div ref={divRef}>
+                    <SyntaxHighlighter language="cpp" style={darcula}>
+                      {code3}
+                    </SyntaxHighlighter>
+                  </div>
+                </div>
+                <br />
+              </p><br /> 
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
                 Practice Questions:
               </h2>
 
               <br />
               <br />
-              <Q27 />
+              <Q28 />
             </div>
-            <Link to="/tutorials/Chapter23">
+            <Link to="/tutorials/Chapter27">
               <button
                 class="ui primary button"
                 style={{ flex: 1, minWidth: "100px", height: "40px" }}
@@ -212,7 +204,7 @@ int main(){
                 Previous
               </button>
             </Link>
-            <Link to="/tutorials/Chapter25">
+            <Link to="/tutorials/Chapter29">
               <button
                 class="ui primary button"
                 style={{
@@ -235,4 +227,4 @@ int main(){
     </>
   );
 };
-export default Ch24;
+export default Ch28;

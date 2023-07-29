@@ -76,6 +76,7 @@ const code21 = `log10(x);`
               >
                 Previous
               </button></Link>
+              <Link to="/tutorials/Chapter19">
                 <button
                   class="ui primary button"
                   style={{
@@ -86,7 +87,7 @@ const code21 = `log10(x);`
                   }}
                 >
                   <span> Next</span>
-                </button>
+                </button></Link>
               <br />
               <div class="start content">Built-in functions</div>
             </h2>

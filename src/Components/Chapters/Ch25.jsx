@@ -33,43 +33,36 @@ const Ch25 = () => {
     marginLeft: "0%",
   };
   const code1 = `
-class Parent{
+class ParentClassName{
 	
 };
-class Child : access_modifier Parent{
+class ChildClassName : access_modifier ParentClassName{
 	
 	
 };
 int main(){
 	Child C1;
-	/*with C1 you can access data members of Parent class
-	does not matter if they are not members of Child class*/
+	/*with C1 you can access data members of Parent class except
+	private, does not matter if they are not members of Child class*/
 }`;
   const code2 = `#include<iostream>
 using namespace std;
 //parent class
 class Vehicles{
-	private:
-		int price=100000, weightInKgs=200;
-	public:
-		int getPrice(){
-			return price;
-		}
-		int getWeight(){
-			return weightInKgs;
-		}
+  public:
+    void canAccelerate(){
+    cout<<"Accelerate\\n";
+      }
 };
 //child class
 class Volvo : public Vehicles{
-	public:
-		string name = "Volvo";
-	
+  //class members if any    
 };
 int main(){
-	Volvo v;
-    /*getprice() is the function of parent class 
-    but it is inherited by the child class Volvo*/
-	cout<<v.getPrice();
+  Volvo v;
+  /*canAccelerate() is the function of parent class 
+  but it is inherited by the child class Volvo*/
+  v.canAccelerate();
 }`;
   const code3 = `class Parent {
 	private:
@@ -156,6 +149,30 @@ class Bird : public Animal {
 class Bat : public Mammal, public Bird {
   // Bat class members
 };`;
+  const code11 = `derived-class-constructor-name(datatype para1,...) : base-class-constructor-name(args){
+  //body of derived class constructor
+}`;
+  const code12 = `class Shape { 
+  protected:
+    int length;
+    int width;
+  
+  public:
+  
+    // Parametrized constructor
+    Shape(int length, int width) {
+      this->length = length;
+      this->width = width;
+    }
+  
+};
+  
+class Triangle : public Shape {
+  public:
+    // Parametrized constructor
+    Triangle(int base, int height) : Shape(base, height) {
+  }
+};`;
   return (
     <>
       <Sidebar>
@@ -208,6 +225,15 @@ class Bat : public Mammal, public Bird {
                   </div>
                 </div>
                 <br />
+                <p style={{ backgroundColor: "#FBEEAC", padding: "15px" }}>
+                  <b>Parent class </b>is also called Base class or Super class.{" "}
+                  <br />
+                  <b>Child class </b>is also called Derived class or Sub class.{" "}
+                  <br />
+                  <b>Note: </b>It is a custom to start the name of class with
+                  capital letter. But if you are fitting well with small letter,
+                  there is no problem.
+                </p>
                 <br />
                 <br />
                 <b>Example</b>
@@ -243,6 +269,15 @@ class Bat : public Mammal, public Bird {
                 accessed in main function, they can only be accessed in child
                 class. <br />
                 <br />
+                We have studied access specifiers of class members. Access
+                specifiers are also used in inheritance. There are three modes
+                of inheritance based on access specifiers. <br />
+                <ul class="ui unordered list">
+                  <li>Public mode</li>
+                  <li>Private mode</li>
+                  <li>Protected mode</li>
+                </ul>
+                Lets explore some details.
                 <br />
                 <b style={{ fontSize: "20px" }}>
                   Access Specifiers in inheritance:
@@ -305,7 +340,7 @@ class Bat : public Mammal, public Bird {
                 </div>
                 <br />
                 <br />
-                <b>Types of Inheritance:</b>
+                <b>Levels of Inheritance:</b>
                 <br />
                 <ul class="ui unordered list">
                   <li>Single Inheritance</li>
@@ -447,6 +482,28 @@ class Bat : public Mammal, public Bird {
                   </div>
                 </div>
                 <br />
+                <br />
+                <b>Inheritance and Constructor:</b>
+                <br />
+                When we have a base class and a derived class, we need to pass
+                arguments from derived class to base class.
+                <br />
+                <div style={containerStyle}>
+                  <div ref={divRef}>
+                    <SyntaxHighlighter language="cpp" style={darcula}>
+                      {code11}
+                    </SyntaxHighlighter>
+                  </div>
+                </div>
+                <br />
+                <b>Example:</b>
+                <div style={containerStyle}>
+                  <div ref={divRef}>
+                    <SyntaxHighlighter language="cpp" style={darcula}>
+                      {code12}
+                    </SyntaxHighlighter>
+                  </div>
+                </div>
               </p>
               <br />
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
