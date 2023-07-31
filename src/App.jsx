@@ -32,6 +32,11 @@ import Ch27 from './Components/Chapters/Ch27'
 import Ch28 from './Components/Chapters/Ch28'
 import Ch29 from './Components/Chapters/Ch29'
 import Header from './Components/Home/NewHeader.jsx';
+import Ch30 from './Components/Chapters/Ch30'
+import Ch31 from './Components/Chapters/Ch31'
+import Ch32 from './Components/Chapters/Ch32'
+import Ch33 from './Components/Chapters/Ch33'
+
 import Projects from './Components/Projects/Projects.jsx';
 import CppatGlance from './Components/CppatGlance/CppatGlance.jsx';
 import Ch14b from './Components/Chapters/Ch14b'
@@ -67,6 +72,10 @@ import Quiz28 from './Components/Quizes/Quiz28'
 import Quiz29 from './Components/Quizes/Quiz29'
 import Quiz30 from './Components/Quizes/Quiz30'
 import Quiz31 from './Components/Quizes/Quiz31'
+import Quiz32 from './Components/Quizes/Quiz32'
+import Quiz33 from './Components/Quizes/Quiz33'
+import RoadMap from './Components/RoadMap/RoadMap'
+
 
 
 
@@ -108,6 +117,10 @@ const App = () => {
       <Route path="/tutorials/Chapter27" element={<Ch27 />} />
       <Route path="/tutorials/Chapter28" element={<Ch28 />} />
       <Route path="/tutorials/Chapter29" element={<Ch29 />} />
+      <Route path="/tutorials/Chapter30" element={<Ch30 />} />
+      <Route path="/tutorials/Chapter31" element={<Ch31 />} />
+      <Route path="/tutorials/Chapter32" element={<Ch32 />} />
+      <Route path="/tutorials/Chapter33" element={<Ch33 />} />
       <Route path='/' element={<Home/>} />
       <Route path='/services' element={<Services/>}/>
       <Route path='/projects' element={<Projects/>}/>
@@ -144,6 +157,9 @@ const App = () => {
       <Route path="/quizes/quiz29" element={<Quiz29/>}/>
       <Route path="/quizes/quiz30" element={<Quiz30/>}/>
       <Route path="/quizes/quiz31" element={<Quiz31/>}/>
+      <Route path="/quizes/quiz32" element={<Quiz32/>}/>
+      <Route path="/quizes/quiz33" element={<Quiz33/>}/>
+      <Route path="/roadmap" element={<RoadMap/>}/>
       </Routes>
       
       

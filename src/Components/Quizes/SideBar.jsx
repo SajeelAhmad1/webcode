@@ -139,6 +139,14 @@ const Sidebar = ({children}) => {
             path:"/quizes/quiz31",
             name:"Quiz  31",
         },
+        {
+            path:"/quizes/quiz32",
+            name:"Quiz  32",
+        },
+        {
+            path:"/quizes/quiz33",
+            name:"Quiz  33",
+        },
         
     ]
     return (

@@ -113,6 +113,29 @@ int main(){
     cout<<res<<endl;
     return 0;
 }`;
+const code9 = `int main() {
+  label:
+    //code
+  goto label;
+  //code
+}`
+const code10 = `#include <iostream>
+using namespace std;
+
+
+int main() {
+    int age;
+    age:
+    cout << "Enter your age";
+    cin >> age;
+    if(age >= 18){
+    	cout<<"You are an adult\n";
+	}
+	else{
+		cout<<"You are not an adult\n";
+		goto age;
+	}
+}`
   return (
     <>
       <Sidebar>
@@ -323,6 +346,41 @@ int main(){
                 <div ref={divRef}>
                   <SyntaxHighlighter language="cpp" style={darcula}>
                     {code8}
+                  </SyntaxHighlighter>
+                </div>
+              </div>
+              <br />
+              <b>Goto Statement:</b><br />
+              As name indicates goto statemet is used to go to a particular line of code. We labelled a line of code and 
+              at some point, we write "goto label" and our control jumps to that label. <br /><br />
+              <b>Syntax:</b>
+              <br />
+              <div style={containerStyle}>
+                <div ref={divRef}>
+                  <SyntaxHighlighter language="cpp" style={darcula}>
+                    {code9}
+                  </SyntaxHighlighter>
+                </div>
+              </div>
+              <br />
+              <b>Example:</b>
+              <div style={containerStyle}>
+                <div style={{ fontSize: "25px" }}>
+                  <b>goto.cpp</b>
+
+                  <i
+                    class="copy icon"
+                    onClick={copyContent}
+                    style={{
+                      cursor: "pointer",
+                      float: "right",
+                      fontSize: "20px",
+                    }}
+                  ></i>
+                </div>
+                <div ref={divRef}>
+                  <SyntaxHighlighter language="cpp" style={darcula}>
+                    {code10}
                   </SyntaxHighlighter>
                 </div>
               </div>

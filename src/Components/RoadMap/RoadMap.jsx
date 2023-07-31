@@ -1,7 +1,7 @@
 import React from "react";
-import "./BeginnerGuide.css";
+import "./RoadMap.css";
 
-const BeginnerGuide = () => {
+const RoadMap = () => {
   return (
     <div class="beginner-guide">
       <h2 class="ax ui header">
@@ -183,4 +183,4 @@ const BeginnerGuide = () => {
     </div>
   );
 };
-export default BeginnerGuide;
+export default RoadMap;

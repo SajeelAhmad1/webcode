@@ -7,7 +7,7 @@ import "./Quiz.css";
 import "../Chapters/Chapters.css";
 import Modal from "react-modal";
 
-const Quiz31 = () => {
+const Quiz32 = () => {
   const [answers, setAnswers] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -19,14 +19,70 @@ const Quiz31 = () => {
     setIsModalOpen(false);
   };
   const questions = [
-    // {
-    //   id: 1,
-    //   question: 'Child class inherit _____ data of parent class:',
-    //   options: [
-    //     "private and public", "private and protected",  "protected", "public and protected"
-    //   ],
-    //   correctAnswer: "public and protected",
-    // },
+    {
+      id: 1,
+      question: 'Operator overloadng is:',
+      options: [
+        "changing sign of operator", "giving a special meaning to operator",  "operator breaking", "overloading public functions"
+      ],
+      correctAnswer: "giving a special meaning to operator",
+    },
+    {
+        id: 2,
+        question: 'The built-in definition of "<<" operator is :',
+        options: [
+          "taking input", "giving output",  "shifting bits", "used for all"
+        ],
+        correctAnswer: "shifting bits",
+      },
+      {
+        id: 3,
+        question: 'Operator function should be a:',
+        options: [
+          "member function of class", "friend function",  "Both A or B", "private member of class"
+        ],
+        correctAnswer: "Both A or B",
+      },
+      {
+        id: 4,
+        question: 'For overloading unary operator, number of arguments required are:',
+        options: [
+          "1", "2",  "3", "0"
+        ],
+        correctAnswer: "0",
+      },
+      {
+        id: 5,
+        question: 'For overloading binary operator, number of arguments required are:',
+        options: [
+          "1", "2",  "3", "0"
+        ],
+        correctAnswer: "1",
+      },
+      {
+        id: 6,
+        question: 'For overloading operators, class definition is necessary:',
+        options: [
+          "Yes", "No"
+        ],
+        correctAnswer: "Yes",
+      },
+      {
+        id: 7,
+        question: 'For overloading scope resolution operators, we require:',
+        options: [
+          "1 argument", "2 arguments", "3 arguments", "it can not be overloaded"
+        ],
+        correctAnswer: "it can not be overloaded",
+      },
+      {
+        id: 8,
+        question: 'For overloading "+" resolution operators, we require:',
+        options: [
+          "1 argument", "2 arguments", "3 arguments", "it can not be overloaded"
+        ],
+        correctAnswer: "1 argument",
+      },
     
     
   ];
@@ -60,7 +116,7 @@ const Quiz31 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz30">
+              <Link to="/quizes/quiz31">
                 <button
                   class="ui primary button"
                   style={{
@@ -72,7 +128,7 @@ const Quiz31 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz32">
+              <Link to="/quizes/quiz33">
                 <button
                   class="ui primary button"
                   style={{
@@ -87,15 +143,15 @@ const Quiz31 = () => {
                 </Link>
               <br />
               <div class="start content">
-                File Handling
+                Operator Overloading
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Quiz # 31
+                Quiz # 32
               </h2>
-              <span class="tut-btn"><Link to="/tutorials/Chapter29">
+              <span class="tut-btn"><Link to="/tutorials/Chapter30">
                   <button class="ui secondary button">Read Tutorial</button>
                 </Link></span>
               <div class="ui clearing divider"></div>
@@ -157,7 +213,7 @@ const Quiz31 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz32">
+              <Link to="/quizes/quiz33">
                 <button
                   class="ui primary button"
                   style={{
@@ -181,4 +237,4 @@ const Quiz31 = () => {
     </>
   );
 };
-export default Quiz31;
+export default Quiz32;

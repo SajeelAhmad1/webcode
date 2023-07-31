@@ -105,7 +105,7 @@ int main()
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/tutorials/Chapter23">
+              <Link to="/tutorials/Chapter28">
                 <button
                   class="ui primary button"
                   style={{ flex: 1, minWidth: "100px", height: "40px" }}
@@ -113,7 +113,7 @@ int main()
                   Previous
                 </button>
               </Link>
-              <Link to="/tutorials/Chapter25">
+              <Link to="/tutorials/Chapter30">
                 <button
                   class="ui primary button"
                   style={{
@@ -220,7 +220,7 @@ int main()
               <br />
               {/* <Q24 /> */}
             </div>
-            <Link to="/tutorials/Chapter23">
+            <Link to="/tutorials/Chapter28">
               <button
                 class="ui primary button"
                 style={{ flex: 1, minWidth: "100px", height: "40px" }}
@@ -228,7 +228,7 @@ int main()
                 Previous
               </button>
             </Link>
-            <Link to="/tutorials/Chapter25">
+            <Link to="/tutorials/Chapter30">
               <button
                 class="ui primary button"
                 style={{

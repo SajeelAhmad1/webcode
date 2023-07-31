@@ -109,7 +109,16 @@ else{
     //code
 }
 
-Ternary Operator
+//goto statement
+int main(){
+  //code
+  label:
+  // code
+  goto label;
+  // code
+}
+
+//Ternary Operator
 variable = condition ? ifTrue : ifFalse;
 `
 const code10 = `switch(expression){
@@ -449,6 +458,18 @@ const code27 = `try {
 catch () {
   // Block of code to handle errors
 }`
+const code28 = `//function templates
+template <typename T>
+T funcName(){
+  //code
+  return T;
+}
+
+//class templates
+template <typename T>
+class clasName{
+  // class members with data type and return type "T"
+};`
 
   return (
     <>
@@ -733,6 +754,17 @@ catch () {
 
           <p>
           <span class="h1">Exceptions</span>
+            
+            <div >
+              <SyntaxHighlighter language="cpp" >
+                {code27}
+              </SyntaxHighlighter>
+            </div>
+          </p><br/><br/>
+
+
+          <p>
+          <span class="h1">Templates</span>
             
             <div >
               <SyntaxHighlighter language="cpp" >

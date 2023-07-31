@@ -61,6 +61,10 @@ int main(){
     }
     return 0;
 }`;
+const code5 = `// infinite for loop
+for(;;){
+  // code
+}`
   return (
     <>
       <Sidebar>
@@ -211,7 +215,18 @@ int main(){
                 </div>
               </div>
               <br />
-              This will print your name 25 times.
+              This will print your name 25 times. <br /><br />
+              <b>Infinite for loop:</b><br />
+              If you put the double semicolon inside paranthesis, it will become infinite for loop. <br /><br />
+              <b>Syntax:</b>
+              <div style={containerStyle}>
+                <div ref={divRef}>
+                  <SyntaxHighlighter language="cpp" style={darcula}>
+                    {code5}
+                  </SyntaxHighlighter>
+                </div>
+              </div>
+
               <div className="quiz">
                 <Link to="/quizes/quiz13">
                   <button class="ui secondary button">Start Quiz</button>

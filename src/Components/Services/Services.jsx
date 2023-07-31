@@ -80,11 +80,12 @@ const Services = () => {
         </div>
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
-          <div class="abs absolute inset-0 w-full h-full object-cover object-center"><div class="text">Beginner Guide</div></div>
+          <div class="abs absolute inset-0 w-full h-full object-cover object-center"><div class="text">Road Map</div></div>
             <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><b>Beginner Guide</b></h2>
-              <p class="leading-relaxed">If you are a beginner and do not know from where to start? This section will help you.</p>
-              <button onclick="window.location.href='mergesort.html';" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Explore
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"><b>Road Map</b></h2>
+              <p class="leading-relaxed">If you do not know from where to start and where to go? This section will help you.</p>
+              <button onclick="window.location.href='mergesort.html';" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+                <Link to="/roadmap">Explore</Link>
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>

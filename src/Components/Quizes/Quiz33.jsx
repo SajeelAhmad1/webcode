@@ -7,7 +7,7 @@ import "./Quiz.css";
 import "../Chapters/Chapters.css";
 import Modal from "react-modal";
 
-const Quiz31 = () => {
+const Quiz33 = () => {
   const [answers, setAnswers] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -19,14 +19,47 @@ const Quiz31 = () => {
     setIsModalOpen(false);
   };
   const questions = [
-    // {
-    //   id: 1,
-    //   question: 'Child class inherit _____ data of parent class:',
-    //   options: [
-    //     "private and public", "private and protected",  "protected", "public and protected"
-    //   ],
-    //   correctAnswer: "public and protected",
-    // },
+    {
+      id: 1,
+      question: 'Identify correct statement for Templates:',
+      options: [
+        "make code lengthy", "make code DRY",  "make code generic", "Both B and C"
+      ],
+      correctAnswer: "Both B and C",
+    },
+    {
+        id: 2,
+        question: 'In template functions we use :',
+        options: [
+          "generic data type", "same data type",  "different data type", "int data type"
+        ],
+        correctAnswer: "generic data type",
+      },
+      {
+        id: 3,
+        question: 'The keyword used to define a template is:',
+        options: [
+          "class", "generic",  "function", "template"
+        ],
+        correctAnswer: "template",
+      },
+      {
+        id: 4,
+        question: 'Data type in template functions and template classes is generic:',
+        options: [
+          "Yes", "No"
+        ],
+        correctAnswer: "Yes",
+      },
+      {
+        id: 5,
+        question: 'Identify the correct syntax to declare template:',
+        options: [
+          "template (temp T);", "template <typename T>", "Template <T>", "templates <T1, T2....>"
+        ],
+        correctAnswer: "template <typename T>",
+      },
+      
     
     
   ];
@@ -60,7 +93,7 @@ const Quiz31 = () => {
         <div class="container">
           <div className="ch-content">
             <h2 class="ui header">
-              <Link to="/quizes/quiz30">
+              <Link to="/quizes/quiz32">
                 <button
                   class="ui primary button"
                   style={{
@@ -72,7 +105,7 @@ const Quiz31 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz32">
+              {/* <Link to="/quizes/quiz31"> */}
                 <button
                   class="ui primary button"
                   style={{
@@ -84,18 +117,18 @@ const Quiz31 = () => {
                 >
                   <span> Next</span>
                 </button>
-                </Link>
+                {/* </Link> */}
               <br />
               <div class="start content">
-                File Handling
+                Templates
               </div>
             </h2>
 
             <div class="main-body ui segment">
               <h2 class="ui left floated header" style={{ color: "#001C30" }}>
-                Quiz # 31
+                Quiz # 33
               </h2>
-              <span class="tut-btn"><Link to="/tutorials/Chapter29">
+              <span class="tut-btn"><Link to="/tutorials/Chapter31">
                   <button class="ui secondary button">Read Tutorial</button>
                 </Link></span>
               <div class="ui clearing divider"></div>
@@ -145,7 +178,7 @@ const Quiz31 = () => {
 
               <br />
             </div>
-            <Link to="/quizes/quiz30">
+            <Link to="/quizes/quiz32">
                 <button
                   class="ui primary button"
                   style={{
@@ -157,7 +190,7 @@ const Quiz31 = () => {
                   Previous
                 </button>
               </Link>
-              <Link to="/quizes/quiz32">
+              {/* <Link to="/quizes/quiz31"> */}
                 <button
                   class="ui primary button"
                   style={{
@@ -169,7 +202,7 @@ const Quiz31 = () => {
                 >
                   <span> Next</span>
                 </button>
-                </Link>
+                {/* </Link> */}
             <br />
           </div>
         </div>
@@ -181,4 +214,4 @@ const Quiz31 = () => {
     </>
   );
 };
-export default Quiz31;
+export default Quiz33;

@@ -154,7 +154,7 @@ int main(){
               This will print name 10 times
               <br />
               <br />
-              Program to print couting from 1 to 5: <br />
+              <b>Program to print couting from 1 to 5:</b> <br />
               <div style={containerStyle}>
                 <div style={{ fontSize: "25px" }}>
                   <b>while.cpp</b>
@@ -176,7 +176,11 @@ int main(){
                 </div>
               </div>
               <br />
+              <p style={{ backgroundColor: "#FBEEAC", padding: "15px" }}>
+              If we write true in condition, this while loop will become infinite. You can use ctrl + c on your 
+              keyboard to stop an infinite loop. </p>
               <br />
+              
               <b>Do-While Loop:</b>
               <br /> While and do while loops are almost the same. The only
               difference is that in do while loop, first iteration is done

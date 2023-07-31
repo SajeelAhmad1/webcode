@@ -139,6 +139,22 @@ const Sidebar = ({children}) => {
             path:"/tutorials/Chapter29",
             name:"File Handling",
         },
+        {
+            path:"/tutorials/Chapter30",
+            name:"Operator Overloading",
+        },
+        {
+            path:"/tutorials/Chapter31",
+            name:"Templates",
+        },
+        {
+            path:"/tutorials/Chapter32",
+            name:"STL",
+        },
+        {
+            path:"/tutorials/Chapter33",
+            name:"Containers",
+        },
 
         
     ]
