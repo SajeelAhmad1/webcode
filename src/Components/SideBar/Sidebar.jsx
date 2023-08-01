@@ -43,126 +43,14 @@ const Sidebar = ({children}) => {
             path:"/tutorials/Chapter7",
             name:"Taking Input",
         },
-        {
-            path:"/tutorials/Chapter8",
-            name:"Data types",
-        },
-        {
-            path:"/tutorials/Chapter9",
-            name:"Operators",
-        },
-        {
-            path:"/tutorials/Chapter10",
-            name:"Strings",
-        },
-        {
-            path:"/tutorials/Chapter11",
-            name:"Conditional Statements",
-        },
-        {
-            path:"/tutorials/Chapter12",
-            name:"Switch Statements",
-        },
-        {
-            path:"/tutorials/Chapter13",
-            name:"For Loop",
-        },
-        {
-            path:"/tutorials/Chapter14",
-            name:"While and do-while Loop",
-        },
-        {
-            path:"/tutorials/Chapter14b",
-            name:"Continue and Break Statements",
-        },
-        {
-            path:"/tutorials/Chapter15",
-            name:"Arrays",
-        },
-        {
-            path:"/tutorials/Chapter16",
-            name:"Structures and Unions",
-        },
-        {
-            path:"/tutorials/Chapter17",
-            name:"Pointers",
-        },
-        {
-            path:"/tutorials/Chapter18",
-            name:"Functions",
-        },
-        {
-            path:"/tutorials/Chapter18b",
-            name:"Built-in Functions",
-        },
-        {
-            path:"/tutorials/Chapter19",
-            name:"OOP",
-        },
-        {
-            path:"/tutorials/Chapter20",
-            name:"Classes and Objects",
-        },
-        {
-            path:"/tutorials/Chapter21",
-            name:"Constructors and Destructors",
-        },
-        {
-            path:"/tutorials/Chapter22",
-            name:"Access Specifiers",
-        },
-        {
-            path:"/tutorials/Chapter23",
-            name:"Friend Functions and Friend Classes",
-        },
-        {
-            path:"/tutorials/Chapter24",
-            name:"Encapsulation",
-        },
-        {
-            path:"/tutorials/Chapter25",
-            name:"Inheritance",
-        },
-        {
-            path:"/tutorials/Chapter26",
-            name:"Polymorphism",
-        },
-        {
-            path:"/tutorials/Chapter27",
-            name:"Abstraction",
-        },
-        {
-            path:"/tutorials/Chapter28",
-            name:"Exceptions",
-        },
-        {
-            path:"/tutorials/Chapter29",
-            name:"File Handling",
-        },
-        {
-            path:"/tutorials/Chapter30",
-            name:"Operator Overloading",
-        },
-        {
-            path:"/tutorials/Chapter31",
-            name:"Templates",
-        },
-        {
-            path:"/tutorials/Chapter32",
-            name:"STL",
-        },
-        {
-            path:"/tutorials/Chapter33",
-            name:"Containers",
-        },
-
+        
         
     ]
     return (
         <>
         <div className="container">
            <div style={{width: isOpen ? "200px" : "200px"}} className="sidebar">
-               <div className="top_section">
+               <div className="top_section"><br /><br /><br />
                    <h1 style={{display: isOpen ? "block" : "block", fontSize:'25px'}} className="logo"><b style={{color:'black'}}>C++Tutorial</b></h1>
                    
                </div>

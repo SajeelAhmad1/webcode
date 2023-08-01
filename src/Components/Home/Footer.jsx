@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
               {/* Logo */}
               <span className="text-black rounded-md px-3 py-2 font-medium ml-3 text-2xl">
-                Home
+                <Link to="/">CodeCrafter</Link>
               </span>
             </a>
             <p className="mt-2 px-6 py-1 text-gray-500">
@@ -36,53 +37,54 @@ const Footer = () => {
                 </li>
               </nav>
             </div>
+            
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="text-black text-sm text-xl"></h2>
+              <br />
+              <nav className="list-none mb-10">
+                <li>
+                  <a className="text-gray-500 hover:text-black font-medium">
+                    
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-500 hover:text-black font-medium">
+                    
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-500 hover:text-black font-medium">
+                    
+                  </a>
+                </li>
+                <li>
+                  <a className="text-gray-600 hover:text-gray-800"></a>
+                </li>
+              </nav>
+            </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 className="text-black text-sm text-xl">Quick Links</h2>
               <br />
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-gray-500 hover:text-black font-medium">
-                    Home
+                    <Link to="/">Home</Link>
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-500 hover:text-black font-medium">
-                    Tutorials
+                    <Link to="/tutorials/Chapter1">Tutorials</Link>
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-500 hover:text-black font-medium">
-                    Exercises
+                    <Link to="cppatglance">C++ at Glance</Link>
                   </a>
                 </li>
                 <li>
                   <a className="text-gray-500 hover:text-black font-medium">
-                    Quizes
+                    <Link to="/quizes/quiz1">Quizes</Link>
                   </a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="text-black text-sm text-xl">Check</h2>
-              <br />
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    Beginner Guide
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    Refrences
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800"></a>
                 </li>
               </nav>
             </div>

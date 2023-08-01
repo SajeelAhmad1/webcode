@@ -9,9 +9,7 @@
     margin-left: 5%;
 }
 
-.button{
-  /* width: 12%; */
-}
+
 
 /* Styles for the parent container */
 .container {
@@ -46,14 +44,14 @@
   }
   
   /* Media query for smaller screens */
-  @media (max-width: 768px) {
+  @media (max-width: 80%) {
     .ch-content {
-      width: 50%; /* Custom width for smaller screens */
+      width: 100%; /* Custom width for smaller screens */
     }
   }
   
   /* Media query for even smaller screens */
-  @media (max-width: 480px) {
+  @media (max-width: 80%) {
     .ch-content {
       width: 100%; /* Custom width for even smaller screens */
     }

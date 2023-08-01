@@ -44,27 +44,29 @@ const Header = () => {
       <div className="nav ">
         <div className="mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           {" "}
-          <div className="logo"> Home</div>
+          <div className="logo"> 
+          <Link to='/'>CodeCrafter</Link></div>
           <div className="first-header-bar text-white text-sm text-center sm:text-left text-xl"></div>
-          <div className="header-bar text-white text-sm text-center sm:text-left text-xl">
-            <Link to="/">Home</Link>
-          </div>
+          
           
           
           <div className="header-bar text-white text-center sm:text-left text-xl">
-            <Link to="/services">Services</Link>
+            <Link to="/tutorials/Chapter1">Tutorials</Link>
           </div>
           <div className="header-bar text-white text-center sm:text-left text-xl">
-            <Link to="/tutorials">Tutorials</Link>
+            <Link to="/quizes/quiz1">Quizes</Link>
           </div>
           <div className="header-bar text-white text-center sm:text-left text-xl">
             <Link to="/projects">Projects</Link>
           </div>
-          <div class="header-bar-btn">
+          <div className="header-bar text-white text-center sm:text-left text-xl">
+            <Link to="/cppatglance">C++ at Glance</Link>
+          </div>
+          {/* <div class="header-bar-btn">
             <button class="ui button"
             onClick={()=>signin}
             >Signin</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

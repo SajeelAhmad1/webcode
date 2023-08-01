@@ -15,15 +15,16 @@ main {
   background-color: #F5F5F5;
   color: #000000;
   position: fixed;
-  top: 10%;
+  /* top: 10%; */
   width: 25%;
-  height: 90vh;
+  height: 100vh;
   overflow-y: auto;
 }
 .top_section {
   display: flex;
   align-items: center;
-  padding: 20px 15px;
+  padding-top: 10% ;
+  padding-left: 5%;
 }
 
 .link {

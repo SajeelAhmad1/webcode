@@ -31,9 +31,7 @@ const Ch1 = () => {
                 </button>
               </Link>
               <br />
-              <div class="start content">
-                An Overview of Computers and Programming Languages
-              </div>
+              
             </h2>
 
             <div class="main-body ui segment">
@@ -246,20 +244,33 @@ const Ch1 = () => {
                 </Link>
               </div>
             </div>
-            <button class="ui primary button">Previous</button>
-            <Link to="/tutorials/Chapter2">
-              <button class="ui primary button" style={{ float: "right" }}>
-                Next
+            <button
+                class="ui primary button"
+                style={{ flex: 1, minWidth: "100px", height: "40px" }}
+              >
+                Previous
               </button>
-            </Link>
+              <Link to="/tutorials/Chapter2">
+                <button
+                  class="ui primary button"
+                  style={{
+                    flex: 1,
+                    minWidth: "100px",
+                    height: "40px",
+                    float: "right",
+                  }}
+                >
+                  <span> Next</span>
+                </button>
+              </Link>
             <br />
           </div>
         </div>
       </Sidebar>
 
-      <div class="sideBarBody">
+      
         <Footer />
-      </div>
+      
     </>
   );
 };

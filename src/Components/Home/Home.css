@@ -5,12 +5,12 @@
   margin-top: 2%;
 }
 .footer{
-    background-color: #9eadbd;
+    background-color: #000000;
     color: #060707;
 }
 a:hover{
   cursor: pointer;
-  color: #ffffff;
+  color: #12ae65;
 }
 .ax{
   text-align: center;
