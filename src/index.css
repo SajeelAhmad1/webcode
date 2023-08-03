@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.body{
-    background-color:#FFFFFF;
-    font-family: "Roboto, 'Courier New', monospace";
+
+.body {
+  background-color: #ffffff;
+  font-family: "Roboto, 'Courier New', monospace";
 }
