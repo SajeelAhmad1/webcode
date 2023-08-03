@@ -4,14 +4,6 @@
 .sub {
   margin-top: 2%;
 }
-.footer{
-    background-color: #000000;
-    color: #060707;
-}
-a:hover{
-  cursor: pointer;
-  color: #12ae65;
-}
 .ax{
   text-align: center;
 }
@@ -67,12 +59,6 @@ header a:hover{
   background-color: #222222;
   position:fixed;
   /* color: white; */
-}
-.logo{
-  margin-left: 2%;
-  margin-top: 0.5%;
-  font-size: 20px;
-  color: white;
 }
 .home{
   background-color: #ffff;

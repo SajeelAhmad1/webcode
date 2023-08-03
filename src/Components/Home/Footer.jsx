@@ -1,179 +1,42 @@
 import React from "react";
-import "./Home.css";
 import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <hr />
-      <footer className="bg-white text-black body-font">
-        <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-            <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              {/* Logo */}
-              <span className="text-black rounded-md px-3 py-2 font-medium ml-3 text-2xl">
-                <Link to="/">CodeCrafter</Link>
-              </span>
-            </a>
-            <p className="mt-2 px-6 py-1 text-gray-500">
-              Master C++, Create Limitless Possibilities!
-            </p>
-          </div>
-          <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"></h2>
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800"></a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800"></a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800"></a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800"></a>
-                </li>
-              </nav>
-            </div>
-            
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="text-black text-sm text-xl"></h2>
-              <br />
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-600 hover:text-gray-800"></a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="text-black text-sm text-xl">Quick Links</h2>
-              <br />
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    <Link to="/">Home</Link>
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    <Link to="/tutorials/Chapter1">Tutorials</Link>
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    <Link to="cppatglance">C++ at Glance</Link>
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    <Link to="/quizes/quiz1">Quizes</Link>
-                  </a>
-                </li>
-              </nav>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="text-black text-sm text-xl">Help</h2>
-              <br />
-              <nav className="list-none mb-10">
-                <li>
-                  <a className="text-gray-500 hover:text-black text	 ">About</a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium"></a>
-                </li>
-                <li>
-                  <a className="text-gray-500 hover:text-black font-medium"></a>
-                </li>
-              </nav>
-            </div>
+    <footer className="bg-white px-4 py-8 text-black flex flex-col md:flex-row justify-between gap-6 md:gap-0 border-t-2">
+      <div className="flex flex-col justify-center items-center w-full md:w-1/2">
+        <Link to="/" className="text-4xl">CodeCrafter</Link>
+        <p className="text-gray-600">
+          Master C++, Create Limitless Possibilities!
+        </p>
+        <div className="flex gap-3 mt-2 text-xl">
+          <a href="/"><FaGithub /></a>
+          <a href="/"><FaFacebook /></a>
+          <a href="/"><FaInstagram /></a>
+          <a href="/"><FaTwitter /></a>
+        </div>
+      </div>
+      <div className="flex justify-center gap-32 w-full md:w-1/2">
+        <div className="text-gray-600">
+          <h2 className="text-black text-2xl">Quick Links</h2>
+          <div className="flex flex-col">
+            <Link to="/" className="hover:text-black">Home</Link>
+            <Link to="/tutorials/Chapter1" className="hover:text-black">Tutorials</Link>
+            <Link to="/quizes/quiz1" className="hover:text-black">Quiz</Link>
+            <Link to="cppatglance" className="hover:text-black">C++ at Glance</Link>
           </div>
         </div>
-
-        <span
-          className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
-          style={{ marginLeft: "85%" }}
-        >
-          <a className="text-black">
-            <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg>
-          </a>
-          <a className="ml-3 text-black">
-            <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a className="ml-3 text-black">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a className="ml-3 text-black">
-            <svg
-              fill="currentColor"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0"
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-              ></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
-        <br />
-      </footer>
-    </div>
+        <div className="text-gray-600">
+          <h2 className="text-black text-2xl">Help</h2>
+          <div className="flex flex-col">
+            <Link to="/quizes/quiz1" className="hover:text-black">About</Link>
+            <Link to="/quizes/quiz1" className="hover:text-black">Contact</Link>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
+
 export default Footer;
