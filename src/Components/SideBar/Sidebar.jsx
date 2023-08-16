@@ -9,6 +9,7 @@ import {
     FaThList
 }from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import "./App.css"
 
 
 const Sidebar = ({children}) => {
